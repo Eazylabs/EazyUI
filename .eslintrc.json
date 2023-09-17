@@ -2,5 +2,6 @@
   "rules": {
     "no-unused-vars": "error"
   },
-  "extends": "eslint:recommended"
+  "extends": "eslint:recommended",
+  "ignorePatterns": ["docusaurus.config.js", "sidebars.js"]
 }
