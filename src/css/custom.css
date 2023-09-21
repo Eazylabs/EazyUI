@@ -5,7 +5,10 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Source+Code+Pro:wght@400;600;700&display=swap');
+
 :root {
+  --ifm-font-family-base: 'Plus Jakarta Sans';
   --ifm-color-primary: #0ea5e9;
   --ifm-color-primary-dark: #0d95d2;
   --ifm-color-primary-darker: #0c8cc6;
@@ -28,10 +31,23 @@
   --ifm-warn-light: #ffeba5;
   --ifm-danger-dark: #e03131;
   --ifm-danger-light: #ffb9b9;
+  --ifm-blue: #146ebe;
+  --ifm-blue-dark: #154c7d;
+  --ifm-green: #14b789;
+  --ifm-green-dark: #159873;
+  --ifm-yellow: #ffd43b;
+  --ifm-yellow-dark: #f9c200;
+  --ifm-purple: #6741d9;
+  --ifm-purple-dark: #6741d9;
+  --ifm-pink: #e50087;
+  --ifm-pink-dark: #b4016a;
+  --ifm-red: #e03131;
+  --ifm-red-dark: #c52b2b;
 }
 
 /* For readability concerns, you should choose a lighter palette iBBE1FFn dark mode. */
 [data-theme='dark'] {
+  --ifm-font-family-base: 'Plus Jakarta Sans';
   --ifm-color-primary: #0ea5e9;
   --ifm-color-primary-dark: #0d95d2;
   --ifm-color-primary-darker: #0c8cc6;
@@ -40,4 +56,33 @@
   --ifm-color-primary-lighter: #2ab4f2;
   --ifm-color-primary-lightest: #4dc0f4;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-white: #f1f5f9;
+  --ifm-white-secondary: #f8f8f8;
+  --ifm-black: #183153;
+  --ifm-black-secondary: #c3c6d1;
+  --ifm-black-third: #6b7280;
+  --ifm-success-dark: #14b789;
+  --ifm-success-light: #d3fff2;
+  --ifm-info-dark: #3b82b5;
+  --ifm-info-light: #bbe1ff;
+  --ifm-warn-dark: #ffd43b;
+  --ifm-warn-light: #ffeba5;
+  --ifm-danger-dark: #e03131;
+  --ifm-danger-light: #ffb9b9;
+  --ifm-blue: #146ebe;
+  --ifm-blue-dark: #154c7d;
+  --ifm-green: #14b789;
+  --ifm-green-dark: #159873;
+  --ifm-yellow: #ffd43b;
+  --ifm-yellow-dark: #f9c200;
+  --ifm-purple: #6741d9;
+  --ifm-purple-dark: #6741d9;
+  --ifm-pink: #e50087;
+  --ifm-pink-dark: #b4016a;
+  --ifm-red: #e03131;
+  --ifm-red-dark: #c52b2b;
+}
+
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }

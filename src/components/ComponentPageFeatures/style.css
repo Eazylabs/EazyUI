@@ -1,0 +1,109 @@
+.card-display {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.card-component {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid transparent;
+  box-shadow: 0 4px var(--ifm-black-secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-component-image {
+  display: flex;
+  height: 125px;
+  justify-content: center;
+  width: 100%;
+  padding: 16px;
+}
+
+.card-component-image.blue {
+  background-color: var(--ifm-blue);
+}
+
+.card-component-image.green {
+  background-color: var(--ifm-green);
+}
+
+.card-component-image.yellow {
+  background-color: var(--ifm-yellow);
+}
+
+.card-component-image.purple {
+  background-color: var(--ifm-purple);
+}
+
+.card-component-image.pink {
+  background-color: var(--ifm-pink);
+}
+
+.card-component-image.red {
+  background-color: var(--ifm-red);
+}
+
+.card-component-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-component-title {
+  margin-top: 16px;
+  text-transform: capitalize;
+}
+
+.card-component.blue:hover {
+  border: 2px solid var(--ifm-blue-dark);
+  box-shadow: 0 4px var(--ifm-blue-dark);
+  color: var(--ifm-blue-dark);
+}
+
+.card-component.green:hover {
+  border: 2px solid var(--ifm-green-dark);
+  box-shadow: 0 4px var(--ifm-green-dark);
+  color: var(--ifm-green-dark);
+}
+
+.card-component.yellow:hover {
+  border: 2px solid var(--ifm-yellow-dark);
+  box-shadow: 0 4px var(--ifm-yellow-dark);
+  color: var(--ifm-yellow-dark);
+}
+
+.card-component.purple:hover {
+  border: 2px solid var(--ifm-purple-dark);
+  box-shadow: 0 4px var(--ifm-purple-dark);
+  color: var(--ifm-purple-dark);
+}
+
+.card-component.pink:hover {
+  border: 2px solid var(--ifm-pink-dark);
+  box-shadow: 0 4px var(--ifm-pink-dark);
+  color: var(--ifm-pink-dark);
+}
+
+.card-component.red:hover {
+  border: 2px solid var(--ifm-red-dark);
+  box-shadow: 0 4px var(--ifm-red-dark);
+  color: var(--ifm-red-dark);
+}
+
+@media (min-width: 640px) {
+  .card-display {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .card-display {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
