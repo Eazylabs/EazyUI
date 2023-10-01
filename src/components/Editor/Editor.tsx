@@ -4,15 +4,18 @@ import { IStyle } from '@site/src/utils/interfaces/style';
 import { useUnitFilter } from '@site/src/utils/hooks/useUnitFilter';
 import { editorInput } from '@site/src/constant';
 import { IconContext } from 'react-icons';
-import { jsonToCss, borderMerge } from '@site/src/utils/service';
+import { jsonToCss, borderMerge, shadowOpacity } from '@site/src/utils/service';
 
-export function Editor({ element, initStyle }) {
+export function Editor({ element, initStyle, initContent }) {
   const [width, setWidth] = useState(70);
-  const [editorView, setEditorView] = useState<string>('.button-container');
+  const [editorView, setEditorView] = useState<string>(Object.keys(initStyle)[0]);
   const [style, setStyle] = useState<IStyle>(initStyle);
-  const [content, setContent] = useState({
-    '.button-container': 'Button ini di edit',
+  const [content, setContent] = useState(initContent);
+  const [propertyShow, setPropertyShow] = useState({
+    border: initStyle[editorView].hasOwnProperty('borderWidth'),
+    shadow: initStyle[editorView].hasOwnProperty('boxShadow'),
   });
+
   const dragHandler = useCallback(
     (e: React.DragEvent<HTMLDivElement>) => {
       const w =
@@ -32,6 +35,8 @@ export function Editor({ element, initStyle }) {
 
       if (property === 'borderPosition') {
         borderMerge(style, setStyle, removeProperty, editorView, value);
+      } else if (property === 'shadowOpacity') {
+        shadowOpacity(style, setStyle, editorView, property, value);
       } else {
         setStyle({
           ...style,
@@ -46,8 +51,6 @@ export function Editor({ element, initStyle }) {
   );
 
   const removeProperty = (remove: string, data) => {
-    console.log(remove);
-
     if (!data.hasOwnProperty(remove)) {
       return data;
     }
@@ -67,6 +70,12 @@ export function Editor({ element, initStyle }) {
     },
     [content],
   );
+
+  const handleShowProperty = useCallback((e: React.MouseEvent<HTMLInputElement, MouseEvent>) => {
+    const property = e.currentTarget.id;
+    if (property === 'border') {
+    }
+  }, []);
 
   const handleEditorView = useCallback((e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     e.stopPropagation();
@@ -100,7 +109,9 @@ export function Editor({ element, initStyle }) {
                       {data.icons()}
                       <p>{data.section}</p>
                     </div>
-                    <div></div>
+                    <div>
+                      <input type='checkbox' id={data.section} onClick={handleShowProperty} />
+                    </div>
                     <div className='input-section'>
                       {data.input.map((input) => {
                         return (
@@ -122,6 +133,7 @@ export function Editor({ element, initStyle }) {
                                 min={0}
                                 name={input.property}
                                 onChange={input.type === 'text' ? handleChangeContent : handleChangeStyle}
+                                autoComplete='off'
                               />
                             )}
                             {input.type === 'select' && (
