@@ -39,7 +39,7 @@ export const useUnitFilter = ({ name, value }, data): [string, string] => {
           'boxShadow',
           `${shadowX} ${shadowY} ${shadowBlur} ${shadowSpread} ${hexToRGBA(
             value,
-            data.shadowOpacity ? parseInt(data.shadowOpacity) : 1,
+            data.shadowOpacity ? parseInt(data.shadowOpacity) / 100 : 0.5,
           )}`,
         ];
       }
