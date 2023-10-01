@@ -21,5 +21,5 @@ export const hexToRGBA = (hex, alpha) => {
   const chunkSize = Math.floor((hex.length - 1) / 3);
   const hexArr = getChunksFromString(hex.slice(1), chunkSize);
   const [r, g, b, a] = hexArr.map(convertHexUnitTo256);
-  return `rgba(${r}, ${g}, ${b}, ${getAlphafloat(a, alpha)})`;
+  return `rgba(${r},${g},${b},${getAlphafloat(a, alpha)})`;
 };
