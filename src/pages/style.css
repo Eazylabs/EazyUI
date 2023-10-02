@@ -1,0 +1,137 @@
+.hero-title {
+  color: var(--ifm-black);
+  font-size: 32;
+  font-weight: 800;
+  margin: auto;
+  padding-bottom: 40px;
+  max-width: 720px;
+  width: 100%;
+  text-wrap: balance;
+  position: relative;
+  z-index: 1;
+}
+
+.button {
+  font-weight: 600;
+  color: var(--ifm-black);
+  padding: 16px 24px;
+  background-color: #fff;
+  border: 2px solid var(--ifm-black);
+  border-radius: 8px;
+  box-shadow: 0 4px var(--ifm-black);
+  transition: all 150ms ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 4px 4px var(--ifm-black);
+  color: var(--ifm-black);
+  text-decoration: none;
+}
+
+.element-wrapper {
+  display: none;
+}
+
+.element-wrapper-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid var(--ifm-color-primary);
+  position: absolute;
+}
+
+.element-wrapper[title='Tweet'] {
+  border: none;
+  box-shadow: none;
+}
+
+.element-wrapper[title='Tweet'] .element-wrapper-dot {
+  display: none;
+}
+
+.element-wrapper-dot:nth-child(1) {
+  top: -4px;
+  left: -4px;
+}
+
+.element-wrapper-dot:nth-child(2) {
+  top: -4px;
+  right: -4px;
+}
+
+.element-wrapper-dot:nth-child(3) {
+  bottom: -4px;
+  right: -4px;
+}
+
+.element-wrapper-dot:nth-child(4) {
+  bottom: -4px;
+  left: -4px;
+}
+
+.element-wrapper-title {
+  font-size: 16px;
+  position: absolute;
+  top: -24px;
+  left: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .element-wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid var(--ifm-color-primary);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .element-wrapper:nth-child(1) {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--ifm-red);
+  }
+
+  .element-wrapper:nth-child(2) {
+    top: 20%;
+    left: 8%;
+    color: var(--ifm-blue);
+    transform: rotate(-25deg);
+  }
+
+  .element-wrapper:nth-child(3) {
+    top: 55%;
+    left: 15%;
+    color: var(--ifm-yellow);
+    transform: rotate(25deg);
+  }
+
+  .element-wrapper:nth-child(4) {
+    top: 70%;
+    left: 28%;
+    color: var(--ifm-green);
+    transform: rotate(-10deg);
+  }
+
+  .element-wrapper:nth-child(5) {
+    top: 65%;
+    left: auto;
+    right: 15%;
+    color: var(--ifm-pink);
+    transform: rotate(10deg);
+  }
+
+  .element-wrapper:nth-child(6) {
+    top: 15%;
+    left: auto;
+    right: 7%;
+    color: var(--ifm-purple);
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+}

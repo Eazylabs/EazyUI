@@ -1,0 +1,45 @@
+.features {
+  background-color: #f7f7f7;
+  padding: 120px 2rem;
+  text-align: center;
+}
+
+.features h3 {
+  color: var(--ifm-color-primary);
+  font-size: 12px;
+}
+
+.card-display {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  justify-content: center;
+  width: 100%;
+  gap: 16px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 16px;
+}
+
+.card svg {
+  margin: 20px auto;
+}
+
+@media (min-width: 768px) {
+  .card-display {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .features h3 {
+    font-size: 16px;
+  }
+
+  .features h2 {
+    font-size: 40px;
+    max-width: 511px;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 52px;
+  }
+}
