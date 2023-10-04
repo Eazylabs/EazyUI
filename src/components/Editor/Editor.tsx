@@ -129,53 +129,55 @@ export function Editor({ element, initStyle, initHover, initContent }) {
           </div>
           <div className='editor-input'>
             <IconContext.Provider value={{ size: '20px' }}>
-              {editorInput.map((data) => {
+              {editorInput.map(({ section, icons, input }) => {
                 return (
                   <div className='editor-input-section'>
                     <div className='editor-input-title'>
-                      {data.icons()}
-                      <p>{data.section}</p>
+                      {icons()}
+                      <p>{section}</p>
                     </div>
                     <div>
-                      <input
-                        type='checkbox'
-                        id={data.section}
-                        defaultChecked={propertyShow[data.section.toLowerCase()]}
-                        onClick={handleShowProperty}
-                      />
+                      {(section === 'Border' || section === 'Shadow') && (
+                        <input
+                          type='checkbox'
+                          id={section}
+                          defaultChecked={propertyShow[section.toLowerCase()]}
+                          onClick={handleShowProperty}
+                        />
+                      )}
                     </div>
                     <div className='input-section'>
-                      {data.input.map((input) => {
+                      {input.map(({ type, property, icons, options }) => {
                         return (
                           <div className='input-body' role='button'>
-                            {input.icons()}
-                            {['text', 'number', 'color'].includes(input.type) && (
+                            {icons()}
+                            {['text', 'number', 'color'].includes(type) && (
                               <input
-                                type={input.type}
-                                property={input.property}
+                                type={type}
+                                property={property}
                                 defaultValue={
-                                  input.type === 'text'
+                                  type === 'text'
                                     ? content[editorView]
                                       ? content[editorView]
                                       : 'content'
-                                    : style[editorView][input.property]
-                                    ? style[editorView][input.property].toString().replace(/[^0-9.]+/, '')
+                                    : style[editorView][property]
+                                    ? style[editorView][property].toString().replace(/[^0-9.]+/, '')
                                     : 0
                                 }
                                 min={0}
-                                name={input.property}
-                                onChange={input.type === 'text' ? handleChangeContent : handleChangeStyle}
+                                name={property}
+                                onChange={type === 'text' ? handleChangeContent : handleChangeStyle}
                                 autoComplete='off'
-                                disabled={!propertyShow[data.section.toLowerCase()]}
+                                disabled={!propertyShow[section.toLowerCase()]}
                               />
                             )}
-                            {input.type === 'select' && (
-                              <select name={input.property} onChange={handleChangeStyle}>
-                                {input.options.map((option) => {
+                            {type === 'select' && (
+                              <select name={property} onChange={handleChangeStyle}>
+                                {options.map((option) => {
                                   return (
                                     <option
                                       value={option}
-                                      selected={style[editorView][input.property] === option ? true : false}
+                                      selected={style[editorView][property] === option ? true : false}
                                     >
                                       {option}
                                     </option>
