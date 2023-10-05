@@ -101,6 +101,20 @@ export function Editor({ element, initStyle, initHover, initContent }) {
     setEditorView(e.currentTarget.id);
   }, []);
 
+  const handleIsHover = (mode) => {
+    if (mode == 'normal') {
+      const temp = style;
+      setStyle(styleStorage);
+      setStyleStorage(temp);
+      setIsHover(false);
+    } else {
+      const temp = style;
+      setStyle(styleStorage);
+      setStyleStorage(temp);
+      setIsHover(true);
+    }
+  };
+
   const cssString = jsonToCss(style);
 
   const Element = element;
@@ -124,8 +138,8 @@ export function Editor({ element, initStyle, initHover, initContent }) {
         <div onDrag={dragHandler} className='divider'></div>
         <div className='secondary-div' style={{ width: `${100 - width}%` }}>
           <div className='editor-section'>
-            <button onClick={() => setIsHover(false)}>normal</button>
-            <button onClick={() => setIsHover(true)}>hover</button>
+            <button onClick={() => handleIsHover('normal')}>normal</button>
+            <button onClick={() => handleIsHover('hover')}>hover</button>
           </div>
           <div className='editor-input'>
             <IconContext.Provider value={{ size: '20px' }}>
@@ -164,11 +178,24 @@ export function Editor({ element, initStyle, initHover, initContent }) {
                                     ? style[editorView][property].toString().replace(/[^0-9.]+/, '')
                                     : 0
                                 }
+                                value={
+                                  type === 'text'
+                                    ? content[editorView]
+                                      ? content[editorView]
+                                      : 'content'
+                                    : style[editorView][property]
+                                    ? style[editorView][property].toString().replace(/[^0-9.]+/, '')
+                                    : 0
+                                }
                                 min={0}
                                 name={property}
                                 onChange={type === 'text' ? handleChangeContent : handleChangeStyle}
                                 autoComplete='off'
-                                disabled={!propertyShow[section.toLowerCase()]}
+                                disabled={
+                                  section === 'Border' || section === 'Shadow'
+                                    ? !propertyShow[section.toLowerCase()]
+                                    : false
+                                }
                               />
                             )}
                             {type === 'select' && (
