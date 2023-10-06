@@ -1,6 +1,6 @@
-import { ButtonBasic } from './blocks/ButtonBasic';
 import { IEditor } from '@site/src/utils/interfaces/style';
 import { ButtonOutline } from './blocks/ButtonOutline';
+import { ButtonBasic } from './blocks/ButtonBasic';
 
 const BUTTON: Array<IEditor> = [
   {
@@ -9,8 +9,8 @@ const BUTTON: Array<IEditor> = [
       '.button-container': {
         backgroundColor: '#4ba3e3',
         cursor: 'pointer',
-        borderRadius: '0px',
-        fontWeight: 'lighter',
+        borderRadius: '8px',
+        fontWeight: 'semibold',
         color: '#fff',
         padding: '10px',
         boxShadow: '0px 0px 0px 0px rgba(0,0,0,0.20)',

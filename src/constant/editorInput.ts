@@ -1,30 +1,30 @@
-import { IEditorInput } from '../utils/interfaces/style';
-import { TbArrowAutofitWidth, TbLineHeight } from 'react-icons/tb';
-import { PiFrameCorners, PiArrowsVerticalBold, PiArrowsHorizontalFill } from 'react-icons/pi';
+import { BiBorderAll, BiColorFill, BiText } from 'react-icons/bi';
+import { BsBorderStyle, BsBorderWidth } from 'react-icons/bs';
 import {
+  MdBlurOn,
+  MdBorderOuter,
+  MdFormatBold,
+  MdOutlineOpacity,
   MdOutlineRotate90DegreesCcw,
   MdRoundedCorner,
-  MdBorderOuter,
-  MdBlurOn,
-  MdOutlineOpacity,
-  MdViewInAr,
   MdTextFields,
-  MdFormatBold,
+  MdViewInAr,
 } from 'react-icons/md';
-import { RxMargin, RxShadow, RxFontSize, RxLetterCaseCapitalize } from 'react-icons/rx';
-import { BiColorFill, BiBorderAll, BiText } from 'react-icons/bi';
-import { BsBorderWidth, BsBorderStyle } from 'react-icons/bs';
+import { PiFrameCorners } from 'react-icons/pi';
+import { RxFontSize, RxLetterCaseCapitalize, RxMargin, RxShadow } from 'react-icons/rx';
+import { HeightIcon, LetterSpacing, WidthIcon, XHorizontal, YVertical } from '../icons/editor';
+import { IEditorInput } from '../utils/interfaces/style';
 
 export const editorInput: Array<IEditorInput> = [
   {
     section: 'Frame',
     icons: PiFrameCorners,
     input: [
-      { type: 'number', property: 'width', icons: TbArrowAutofitWidth },
+      { type: 'number', property: 'width', icons: WidthIcon },
       {
         type: 'number',
         property: 'height',
-        icons: TbLineHeight,
+        icons: HeightIcon,
       },
       {
         type: 'number',
@@ -76,8 +76,8 @@ export const editorInput: Array<IEditorInput> = [
     section: 'Shadow',
     icons: RxShadow,
     input: [
-      { type: 'number', property: 'shadowX', icons: PiArrowsHorizontalFill },
-      { type: 'number', property: 'shadowY', icons: PiArrowsVerticalBold },
+      { type: 'number', property: 'shadowX', icons: XHorizontal },
+      { type: 'number', property: 'shadowY', icons: YVertical },
       { type: 'number', property: 'shadowBlur', icons: MdBlurOn },
       { type: 'number', property: 'shadowSpread', icons: MdViewInAr },
       { type: 'number', property: 'shadowOpacity', icons: MdOutlineOpacity },
@@ -105,7 +105,7 @@ export const editorInput: Array<IEditorInput> = [
         icons: RxLetterCaseCapitalize,
         options: ['uppercase', 'lowercase', 'capitalize', 'none'],
       },
-      { type: 'number', property: 'letterSpacing', icons: MdViewInAr },
+      { type: 'number', property: 'letterSpacing', icons: LetterSpacing },
       { type: 'text', property: 'shadowOpacity', icons: BiText },
       {
         type: 'color',

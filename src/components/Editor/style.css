@@ -1,7 +1,9 @@
 .main {
   background-color: #fff;
-  color: #000;
-  border: solid 1px #000;
+  color: #ffffffb3;
+  border: solid 1px #00000025;
+  border-radius: 16px;
+  overflow: hidden;
   min-height: 200px;
   width: 100%;
   display: flex;
@@ -9,26 +11,21 @@
 }
 
 .primary-div {
-  background-color: #000;
-  color: #fff;
-  border: solid 1px #000;
   padding: 10px;
   min-height: 100%;
   resize: horizontal;
+  padding: 16px;
 }
 
 .secondary-div {
-  color: #fff;
-  border: solid 1px #000;
   min-height: 100%;
-
   overflow-x: hidden;
 }
 
 .divider {
   width: 3px;
   min-height: 100%;
-  background-color: red;
+  background-color: #ffffff25;
   cursor: col-resize;
 }
 
@@ -36,6 +33,7 @@
   width: 100%;
   display: flex;
   min-height: 200px;
+  background-color: #2c2c2c;
 }
 
 .preview {
@@ -48,36 +46,36 @@
 
 .div-element {
   padding: 100px;
-  border: 1px solid black;
   overflow: auto;
 }
 
 .div-secondary-element {
   padding: 100px;
-  background-color: black;
-  border: 1px solid black;
   overflow: auto;
 }
 
 .editor-section {
   width: 100%;
   display: flex;
-  overflow-x: auto;
+  padding: 16px;
 }
 
 .editor-section p {
-  color: #000;
+  margin: 0;
 }
 
 .editor-input-section {
-  color: #000;
+  border-top: 1px solid #ffffff25;
+  padding: 8px 0;
 }
 
 .editor-input-title {
   display: flex;
   padding: 2px;
+  color: #fff;
   gap: 6px;
   align-items: center;
+  padding-left: 16px;
 }
 
 .editor-input-title p {
@@ -88,30 +86,35 @@
 .input-section {
   display: flex;
   flex-wrap: wrap;
+  gap: 4px;
 }
 
 .input-body {
   width: fit-content;
-  color: #000;
   display: flex;
   gap: 6px;
   align-items: center;
-  padding: 2px;
-  border: solid 2px #fff;
+  padding: 4px 16px;
+  border: 1px solid transparent;
 }
 
 .input-body:hover {
-  border-color: var(--ifm-color-primary);
-  border-radius: 3px;
+  border-color: #ffffff25;
+  border-radius: 2px;
 }
 
 .input-body input {
-  font-size: 16px;
+  color: #ffffffb3;
   width: 50px;
   padding: 0px;
   outline: none;
-  border: 0px;
+  border: none;
   vertical-align: baseline;
+}
+
+.input-body select {
+  color: #ffffffb3;
+  background-color: #2c2c2c;
 }
 
 .editor-section::-webkit-scrollbar {
@@ -122,6 +125,10 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.editor-input-checkbox {
+  padding: 0 16px;
 }
 
 /* Firefox */
