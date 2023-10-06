@@ -1,4 +1,5 @@
 import { IEditor } from '@site/src/utils/interfaces/style';
+import { ButtonOutline } from './blocks/ButtonOutline';
 import { ButtonBasic } from './blocks/ButtonBasic';
 
 const BUTTON: Array<IEditor> = [
@@ -12,14 +13,56 @@ const BUTTON: Array<IEditor> = [
         fontWeight: 'semibold',
         color: '#fff',
         padding: '10px',
-        borderColor: '',
-        borderStyle: '',
-        borderWidth: '',
         boxShadow: '0px 0px 0px 0px rgba(0,0,0,0.20)',
       },
     },
+    initHover: {
+      '.button-container': {
+        backgroundColor: 'red',
+        cursor: 'pointer',
+        borderRadius: '0px',
+        fontWeight: 'lighter',
+        color: '#fff',
+        padding: '10px',
+        borderColor: 'black',
+        borderStyle: 'solid',
+        borderWidth: '1px',
+      },
+    },
     initContent: {
-      '.button-container': 'Button',
+      '.button-container': 'Button ini Container',
+    },
+  },
+  {
+    element: ButtonOutline,
+    initStyle: {
+      '.button-outline': {
+        backgroundColor: '#4ba3e3',
+        cursor: 'pointer',
+        borderRadius: '0px',
+        fontWeight: 'lighter',
+        color: '#fff',
+        padding: '10px',
+        borderColor: 'black',
+        borderStyle: 'solid',
+        borderWidth: '1px',
+      },
+    },
+    initHover: {
+      '.button-outline': {
+        backgroundColor: 'red',
+        cursor: 'pointer',
+        borderRadius: '0px',
+        fontWeight: 'lighter',
+        color: '#fff',
+        padding: '10px',
+        borderColor: 'black',
+        borderStyle: 'solid',
+        borderWidth: '1px',
+      },
+    },
+    initContent: {
+      '.button-outline': 'Button ini Outline',
     },
   },
 ];
