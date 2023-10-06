@@ -1,13 +1,13 @@
-import React, { useCallback, useState } from 'react';
-import './style.css';
-import { IStyle } from '@site/src/utils/interfaces/style';
-import { useUnitFilter } from '@site/src/utils/hooks/useUnitFilter';
 import { editorInput } from '@site/src/constant';
+import { useUnitFilter } from '@site/src/utils/hooks/useUnitFilter';
+import { IStyle } from '@site/src/utils/interfaces/style';
+import { borderMerge, jsonToCss, shadowOpacity } from '@site/src/utils/service';
+import React, { useCallback, useState } from 'react';
 import { IconContext } from 'react-icons';
-import { jsonToCss, borderMerge, shadowOpacity } from '@site/src/utils/service';
+import './style.css';
 
 export function Editor({ element, initStyle, initContent }) {
-  const [width, setWidth] = useState(70);
+  const [width, setWidth] = useState(65);
   const [editorView, setEditorView] = useState<string>(Object.keys(initStyle)[0]);
   const [style, setStyle] = useState<IStyle>(initStyle);
   const [content, setContent] = useState(initContent);
@@ -109,7 +109,7 @@ export function Editor({ element, initStyle, initContent }) {
                       {data.icons()}
                       <p>{data.section}</p>
                     </div>
-                    <div>
+                    <div className='editor-input-checkbox'>
                       <input type='checkbox' id={data.section} onClick={handleShowProperty} />
                     </div>
                     <div className='input-section'>
