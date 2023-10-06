@@ -7,6 +7,7 @@ export interface IStyle {
 export interface IEditor {
   element: any;
   initStyle: IStyle;
+  initHover: IStyle;
   initContent: {
     [key: string]: string;
   };
