@@ -135,3 +135,38 @@
     font-size: 48px;
   }
 }
+
+@media screen and (min-width: 1536px) {
+  .hero-title {
+    font-size: 60px;
+    max-width: 768px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+  .element-wrapper:nth-child(1) {
+    transform: translateX(-50%) scale(1.5);
+  }
+
+  .element-wrapper:nth-child(2) {
+    transform: rotate(-25deg) scale(1.5);
+  }
+
+  .element-wrapper:nth-child(3) {
+    transform: rotate(25deg) scale(1.5);
+  }
+
+  .element-wrapper:nth-child(4) {
+    transform: rotate(-10deg) scale(1.5);
+  }
+
+  .element-wrapper:nth-child(5) {
+    transform: rotate(10deg) scale(1.5);
+  }
+
+  .element-wrapper:nth-child(6) {
+    transform: scale(1.5);
+  }
+}
