@@ -199,7 +199,15 @@ export function Editor({ element, initStyle, initContent, initHover }) {
                               />
                             )}
                             {type === 'select' && (
-                              <select name={property} onChange={handleChangeStyle}>
+                              <select
+                                name={property}
+                                onChange={handleChangeStyle}
+                                disabled={
+                                  section === 'Border' || section === 'Shadow'
+                                    ? !propertyShow[section.toLowerCase()]
+                                    : false
+                                }
+                              >
                                 {options.map((option) => {
                                   return (
                                     <option
