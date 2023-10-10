@@ -4,6 +4,8 @@ import { IStyle } from '@site/src/utils/interfaces/style';
 import { borderMerge, jsonToCss, shadowOpacity } from '@site/src/utils/service';
 import React, { useCallback, useState } from 'react';
 import { IconContext } from 'react-icons';
+import { AiOutlineEye } from 'react-icons/ai';
+import { LiaEditSolid } from 'react-icons/lia';
 import './style.css';
 
 export function Editor({ element, initStyle, initContent, initHover }) {
@@ -13,6 +15,7 @@ export function Editor({ element, initStyle, initContent, initHover }) {
   const [style, setStyle] = useState<IStyle>(initStyle);
   const [styleStorage, setStyleStorage] = useState<IStyle>(initHover);
   const [content, setContent] = useState(initContent);
+  const [toggleView, setToggleView] = useState(1);
   const [propertyShow, setPropertyShow] = useState({
     border: initStyle[editorView].hasOwnProperty('borderWidth'),
     shadow: initStyle[editorView].hasOwnProperty('boxShadow'),
@@ -121,6 +124,24 @@ export function Editor({ element, initStyle, initContent, initHover }) {
 
   return (
     <div className='main'>
+      <div className='main-header'>
+        <div className='header-dot-container'>
+          <div className='header-dot'></div>
+          <div className='header-dot'></div>
+          <div className='header-dot'></div>
+        </div>
+        <div className='header-toggle'>
+          <div className={`header-tab ${toggleView == 1 ? 'left' : 'right'}`}></div>
+          <div onClick={() => setToggleView(1)}>
+            <LiaEditSolid />
+            <span>Editor</span>
+          </div>
+          <div onClick={() => setToggleView(2)}>
+            <AiOutlineEye />
+            <span>Preview</span>
+          </div>
+        </div>
+      </div>
       <div className='preview' id='preview'>
         <Element
           style={style}
