@@ -7,6 +7,7 @@ import { IconContext } from 'react-icons';
 import { AiOutlineEye } from 'react-icons/ai';
 import { LiaEditSolid } from 'react-icons/lia';
 import './style.css';
+import { useValueFilter } from '@site/src/utils/hooks';
 
 export function Editor({ element, initStyle, initContent, initHover }) {
   const [width, setWidth] = useState(65);
@@ -183,6 +184,11 @@ export function Editor({ element, initStyle, initContent, initHover }) {
                     </div>
                     <div className='input-section'>
                       {input.map(({ type, property, icons, options }) => {
+                        const shadowProperty = ['shadowX', 'shadowY', 'shadowBlur', 'shadowSpread', 'shadowColor'];
+                        const value = useValueFilter(
+                          property,
+                          style[editorView][shadowProperty.includes(property) ? 'boxShadow' : property],
+                        );
                         return (
                           <div className='input-body' role='button'>
                             {icons()}
@@ -196,7 +202,7 @@ export function Editor({ element, initStyle, initContent, initHover }) {
                                       ? content[editorView]
                                       : 'content'
                                     : style[editorView][property]
-                                    ? style[editorView][property].toString().replace(/[^0-9.]+/, '')
+                                    ? value
                                     : 0
                                 }
                                 value={
@@ -204,11 +210,10 @@ export function Editor({ element, initStyle, initContent, initHover }) {
                                     ? content[editorView]
                                       ? content[editorView]
                                       : 'content'
-                                    : style[editorView][property]
-                                    ? style[editorView][property].toString().replace(/[^0-9.]+/, '')
+                                    : style[editorView][shadowProperty.includes(property) ? 'boxShadow' : property]
+                                    ? value
                                     : 0
                                 }
-                                min={0}
                                 name={property}
                                 onChange={type === 'text' ? handleChangeContent : handleChangeStyle}
                                 autoComplete='off'
@@ -220,7 +225,15 @@ export function Editor({ element, initStyle, initContent, initHover }) {
                               />
                             )}
                             {type === 'select' && (
-                              <select name={property} onChange={handleChangeStyle}>
+                              <select
+                                name={property}
+                                onChange={handleChangeStyle}
+                                disabled={
+                                  section === 'Border' || section === 'Shadow'
+                                    ? !propertyShow[section.toLowerCase()]
+                                    : false
+                                }
+                              >
                                 {options.map((option) => {
                                   return (
                                     <option

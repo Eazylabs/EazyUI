@@ -26,7 +26,6 @@ export const useUnitFilter = ({ name, value }, data): [string, string] => {
     if (data.boxShadow) {
       const [shadowX, shadowY, shadowBlur, shadowSpread, shadowColor] = data.boxShadow.split(' ');
       if (name == 'shadowX') {
-        console.log('jalan');
         return ['boxShadow', `${value}px ${shadowY} ${shadowBlur} ${shadowSpread} ${shadowColor}`];
       } else if (name == 'shadowY') {
         return ['boxShadow', `${shadowX} ${value}px ${shadowBlur} ${shadowSpread} ${shadowColor}`];
