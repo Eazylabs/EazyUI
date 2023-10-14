@@ -1,7 +1,7 @@
 import { editorInput } from '@site/src/constant';
 import { useUnitFilter } from '@site/src/utils/hooks/useUnitFilter';
 import { IStyle } from '@site/src/utils/interfaces/style';
-import { borderMerge, jsonToCss, shadowOpacity } from '@site/src/utils/service';
+import { borderMerge, jsonToCss, renameAllKeys, shadowOpacity } from '@site/src/utils/service';
 import React, { useCallback, useState } from 'react';
 import { IconContext } from 'react-icons';
 import { AiOutlineEye } from 'react-icons/ai';
@@ -14,7 +14,7 @@ export function Editor({ element, initStyle, initContent, initHover }) {
   const [editorView, setEditorView] = useState<string>(Object.keys(initStyle)[0]);
   const [isHover, setIsHover] = useState<boolean>(false);
   const [style, setStyle] = useState<IStyle>(initStyle);
-  const [styleStorage, setStyleStorage] = useState<IStyle>(initHover);
+  const [styleStorage, setStyleStorage] = useState<IStyle>({ ...style, ...initHover });
   const [content, setContent] = useState(initContent);
   const [toggleView, setToggleView] = useState(1);
   const [propertyShow, setPropertyShow] = useState({
@@ -119,7 +119,11 @@ export function Editor({ element, initStyle, initContent, initHover }) {
     }
   };
 
-  const cssString = jsonToCss(style);
+  console.log(styleStorage, 'styleStorage');
+
+  const rename = renameAllKeys(styleStorage, ':hover');
+
+  const cssString = jsonToCss({ ...style, ...rename });
 
   const Element = element;
 
