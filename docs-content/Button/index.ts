@@ -19,14 +19,6 @@ const BUTTON: Array<IEditor> = [
     initHover: {
       '.button-container': {
         backgroundColor: 'red',
-        cursor: 'pointer',
-        borderRadius: '0px',
-        fontWeight: 'lighter',
-        color: '#fff',
-        padding: '10px',
-        borderColor: 'black',
-        borderStyle: 'solid',
-        borderWidth: '1px',
       },
     },
     initContent: {
@@ -51,14 +43,6 @@ const BUTTON: Array<IEditor> = [
     initHover: {
       '.button-outline': {
         backgroundColor: 'red',
-        cursor: 'pointer',
-        borderRadius: '0px',
-        fontWeight: 'lighter',
-        color: '#fff',
-        padding: '10px',
-        borderColor: 'black',
-        borderStyle: 'solid',
-        borderWidth: '1px',
       },
     },
     initContent: {

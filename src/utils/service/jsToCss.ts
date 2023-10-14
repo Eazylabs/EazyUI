@@ -22,11 +22,15 @@ export function jsonToCss(json: IStyle) {
 
   // Merapikan kode CSS
   cssString = cssString.replace(/\s+/g, ' ').trim();
-  cssString = cssString.replace(/\s*{\s*/g, '{');
+  cssString = cssString.replace(/\s*{\s*/g, ' {\n\t');
   cssString = cssString.replace(/\s*}\s*/g, '}');
-  cssString = cssString.replace(/\s*;\s*/g, ';');
-  cssString = cssString.replace(/;}/g, '}');
+  cssString = cssString.replace(/\s*;\s*/g, ';\n\t');
+  cssString = cssString.replace(/;}/g, '\n}');
+  cssString = cssString.replace(/(^|[\n\r])\s*}(?![\t\s])/g, '\n}');
 
-  const minifiedCss = minify(cssString).css;
+  let minifiedCss = minify(cssString).css;
+
+  minifiedCss = cssString.replace(/}/g, '}\n').toString();
+
   return minifiedCss;
 }

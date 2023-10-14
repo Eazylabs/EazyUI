@@ -78,6 +78,7 @@
   min-height: 100%;
   resize: horizontal;
   padding: 16px;
+  white-space: pre-wrap;
 }
 
 .secondary-div {
