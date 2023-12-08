@@ -1,19 +1,14 @@
-import { highlight, languages } from 'prismjs';
-import 'prismjs/components/prism-css';
 import React from 'react';
-import Editor from 'react-simple-code-editor';
-import './editor.css';
-import './style.css';
+import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import './CodeHighlight.css';
 
 export default function CodeHighlight({ code, lang }) {
   return (
-    <div className='eazy-editor' style={{ fontFamily: 'monospace' }}>
-      <Editor
-        value={code}
-        onValueChange={(e) => console.log(e)}
-        highlight={(code) => highlight(code, languages['css'], '')}
-        readOnly
-      />
+    <div style={{ fontFamily: 'monospace' }} className='editor' id='editor'>
+      <SyntaxHighlighter showLineNumbers language={lang} style={oneDark}>
+        {code}
+      </SyntaxHighlighter>
     </div>
   );
 }
