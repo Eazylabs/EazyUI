@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=JetBrains+Mono&display=swap');
+
+.editor#editor {
+  font-family: var(--ifm-font-family-monospace) !important;
+}
