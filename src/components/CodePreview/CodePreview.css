@@ -1,0 +1,109 @@
+.preview-wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background-color: #f8f9fa;
+  padding: 16px;
+  border-bottom: 1px solid #e4eaee;
+}
+
+.dot-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.copy-btn {
+  color: #a6aec1;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.copy-btn.active {
+  color: var(--ifm-color-primary);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red {
+  background-color: #ff5f5f;
+}
+
+.dot.yellow {
+  background-color: #ffc107;
+}
+
+.dot.green {
+  background-color: #4caf50;
+}
+
+.listbox-wrapper {
+  position: relative;
+}
+
+.listbox-btn {
+  width: 300px;
+  padding: 6px 0;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px #a6afc340;
+  cursor: pointer;
+}
+
+.listbox-btn-chevron {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background-color: #4dc0f420;
+  color: var(--ifm-color-primary);
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.listbox-options {
+  position: absolute;
+  top: 28px;
+  width: 100%;
+  padding-left: 0;
+  padding: 8px;
+  top: 28px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 1px 2px #a6afc340;
+  cursor: pointer;
+}
+
+.listbox-option {
+  padding: 6px 0;
+  border-radius: 8px;
+}
+
+.listbox-option:hover {
+  background-color: #f8f9fa;
+}
+
+.preview {
+  height: 300px;
+  background-color: #282c34;
+}
+
+.preview.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
