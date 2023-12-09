@@ -54,3 +54,9 @@
   color: #14b789;
   border-left: 10px solid #14b789;
 }
+
+.alert-desc-warning {
+  background-color: #ffeba5;
+  color: #183153;
+  border-left: 10px solid #ffd43b;
+}

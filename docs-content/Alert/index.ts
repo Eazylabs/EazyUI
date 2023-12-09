@@ -5,6 +5,7 @@ import { ALERTNEU } from './source-code/alertNeu';
 import { ALERTSUCCESS } from './source-code/alertSuccess';
 import { ALERTSUCCESSDESC } from './source-code/alertSuccessDesc';
 import { ALERTWARNING } from './source-code/alertWarning';
+import { ALERTWARNINGDESC } from './source-code/alertWarningDesc';
 
 export const COMPONENTS = [
   ALERTINFO,
@@ -14,4 +15,5 @@ export const COMPONENTS = [
   ALERTNEU,
   ALERTINFODESC,
   ALERTSUCCESSDESC,
+  ALERTWARNINGDESC,
 ];
