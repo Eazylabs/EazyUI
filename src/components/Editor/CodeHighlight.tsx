@@ -5,7 +5,7 @@ import './CodeHighlight.css';
 
 export default function CodeHighlight({ code, lang }) {
   return (
-    <div style={{ fontFamily: 'monospace' }} className='editor' id='editor'>
+    <div>
       <SyntaxHighlighter showLineNumbers language={lang} style={oneDark}>
         {code}
       </SyntaxHighlighter>
