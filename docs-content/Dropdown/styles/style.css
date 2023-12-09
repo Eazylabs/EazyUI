@@ -52,6 +52,10 @@
   color: var(--ifm-color-primary);
 }
 
+.dropdown-neu .dropdown-section div:first-child {
+  color: #183153;
+}
+
 .dropdown-section:not(:last-child) {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 8px;
