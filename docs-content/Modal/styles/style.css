@@ -1,0 +1,39 @@
+dialog {
+  z-index: 10;
+  margin-top: 10px;
+  margin: auto;
+  width: 100%;
+  max-width: 768px;
+  padding: 16px;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+dialog::backdrop {
+  background-color: #00000030;
+  backdrop-filter: blur(4px);
+}
+
+.modal-btn {
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 16px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 44px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-basic {
+  background-color: #4ba3e3;
+  color: #fff;
+}
