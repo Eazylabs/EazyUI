@@ -1,6 +1,6 @@
 import React from 'react';
-import './ButtonBasic.css';
+import '../styles/style.css';
 
-export function ButtonBasic() {
+export default function ButtonBasic() {
   return <button className='btn btn-basic'>Button Basic</button>;
 }
