@@ -20,3 +20,8 @@
 .alert-warning {
   background-color: #ffd43b;
 }
+
+.alert-danger {
+  background-color: #e03131;
+  color: #fff;
+}
