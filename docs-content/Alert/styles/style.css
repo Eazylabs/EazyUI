@@ -48,3 +48,9 @@
   color: #3b82b5;
   border-left: 10px solid #3b82b5;
 }
+
+.alert-desc-success {
+  background-color: #d3fff2;
+  color: #14b789;
+  border-left: 10px solid #14b789;
+}
