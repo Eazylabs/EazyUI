@@ -43,3 +43,12 @@
   background-color: #f5f5f5;
   border-radius: 4px;
 }
+
+.dropdown-section div:first-child {
+  color: var(--ifm-color-primary);
+}
+
+.dropdown-section:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 8px;
+}
