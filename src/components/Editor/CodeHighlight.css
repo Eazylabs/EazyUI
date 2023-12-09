@@ -2,4 +2,5 @@ pre,
 code {
   font-family: var(--ifm-font-family-monospace) !important;
   margin: 0 !important;
+  max-width: 100% !important;
 }

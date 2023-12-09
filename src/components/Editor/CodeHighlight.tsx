@@ -11,6 +11,7 @@ export default function CodeHighlight({ code, lang }) {
         language={lang}
         style={oneDark}
         lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}
+        wrapLines
       >
         {code}
       </SyntaxHighlighter>
