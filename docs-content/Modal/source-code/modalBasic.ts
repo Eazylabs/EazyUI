@@ -4,7 +4,7 @@ export const MODALBASIC = {
   html: `<button class="btn btn-basic">
   Click Me
 </button>; 
-<div ref={dialog}>
+<dialog>
 <h3>It's a Simple Modal</h3>
   <p>
     The key to more success is to have a lot of pillows. Put it this way, it
@@ -30,7 +30,7 @@ export const MODALBASIC = {
       <span>Save</span>
     </button>
   </div>
-</div>`,
+</dialog>`,
   css: `dialog {
   z-index: 10;
   margin-top: 10px;
