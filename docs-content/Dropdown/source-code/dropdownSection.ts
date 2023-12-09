@@ -50,7 +50,7 @@ export const DROPDOWNSECTION = {
 }
 
 .dropdown-section div:first-child {
-  color: var(--ifm-color-primary);
+  color: #0ea5e9;
 }
 
 .dropdown-section:not(:last-child) {
