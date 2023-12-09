@@ -1,0 +1,13 @@
+.alert {
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 80%;
+}
+
+.alert-info {
+  background-color: #4ba3e3;
+  color: #fff;
+}
