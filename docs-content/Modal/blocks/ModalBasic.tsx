@@ -35,7 +35,7 @@ export default function ModalBasic() {
       <button onClick={openDialog} className='btn btn-basic'>
         Click Me
       </button>
-      <dialog ref={dialog}>
+      <dialog ref={dialog} className='dialog'>
         <h3>It's a Simple Modal</h3>
         <p>
           The key to more success is to have a lot of pillows. Put it this way, it took me twenty five years to get

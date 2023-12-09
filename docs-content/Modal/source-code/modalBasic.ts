@@ -4,7 +4,7 @@ export const MODALBASIC = {
   html: `<button class="btn btn-basic">
   Click Me
 </button>; 
-<dialog>
+<dialog class='dialog'>
 <h3>It's a Simple Modal</h3>
   <p>
     The key to more success is to have a lot of pillows. Put it this way, it
