@@ -31,7 +31,7 @@ export const MODALBASIC = {
     </button>
   </div>
 </dialog>`,
-  css: `dialog {
+  css: `.dialog {
   z-index: 10;
   margin-top: 10px;
   margin: auto;
@@ -43,7 +43,7 @@ export const MODALBASIC = {
   border-radius: 8px;
 }
 
-dialog::backdrop {
+.dialog::backdrop {
   background-color: #00000030;
   backdrop-filter: blur(4px);
 }
