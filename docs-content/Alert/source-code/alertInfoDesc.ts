@@ -32,7 +32,6 @@ export const ALERTINFODESC = {
   border-radius: 8px;
   display: flex;
   gap: 16px;
-  width: 80%;
 }
 
 .alert-desc-info {
