@@ -27,7 +27,6 @@ export const ALERTINFO = {
 .alert-info {
   background-color: #4ba3e3;
   color: #fff;
-}
-  `,
+}`,
   element: AlertInfo,
 };
