@@ -12,9 +12,10 @@
   cursor: pointer;
 }
 
-.btn-basic {
-  background-color: #4ba3e3;
-  color: #fff;
+.btn-neu {
+  color: #183153;
+  border: 1px solid #183153;
+  box-shadow: 0px 4px 0px 0px #183153;
 }
 
 .dropdown-panel {
@@ -54,4 +55,15 @@
 .dropdown-section:not(:last-child) {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 8px;
+}
+
+.dropdown-neu .dropdown-panel {
+  background-color: #fff;
+  border: 1px solid #183153;
+  box-shadow: 0px 4px 0px 0px #183153;
+}
+
+.dropdown-neu .dropdown-item:hover {
+  background-color: #183153;
+  color: #fff;
 }
