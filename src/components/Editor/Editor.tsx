@@ -1,4 +1,5 @@
 import { editorInput } from '@site/src/constant';
+import { useValueFilter } from '@site/src/utils/hooks';
 import { useUnitFilter } from '@site/src/utils/hooks/useUnitFilter';
 import { IStyle } from '@site/src/utils/interfaces/style';
 import { borderMerge, jsonToCss, renameAllKeys, shadowOpacity } from '@site/src/utils/service';
@@ -6,8 +7,8 @@ import React, { useCallback, useState } from 'react';
 import { IconContext } from 'react-icons';
 import { AiOutlineEye } from 'react-icons/ai';
 import { LiaEditSolid } from 'react-icons/lia';
+import CodeHighlight from './CodeHighlight';
 import './style.css';
-import { useValueFilter } from '@site/src/utils/hooks';
 
 export function Editor({ element, initStyle, initContent, initHover }) {
   const [width, setWidth] = useState(65);
@@ -159,7 +160,8 @@ export function Editor({ element, initStyle, initContent, initHover }) {
       </div>
       <div className='custom'>
         <div className='primary-div' style={{ width: `${width}%` }}>
-          {cssString}
+          {/* <pre>{cssString}</pre> */}
+          <CodeHighlight code={cssString} lang='css' />
         </div>
         <div onDrag={dragHandler} className='divider'></div>
         <div className='secondary-div' style={{ width: `${100 - width}%` }}>
