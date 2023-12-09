@@ -1,7 +1,7 @@
 import AlertInfo from '../blocks/AlertInfo';
 
 export const ALERTINFO = {
-  html: `<div className="alert alert-info">
+  html: `<div class="alert alert-info">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="28"
