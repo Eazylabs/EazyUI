@@ -1,4 +1,4 @@
-dialog {
+.dialog {
   z-index: 10;
   margin-top: 10px;
   margin: auto;
@@ -10,7 +10,12 @@ dialog {
   border-radius: 8px;
 }
 
-dialog::backdrop {
+.dialog-neu {
+  border: 1px solid #183153;
+  box-shadow: 4px 4px 0px 0px #183153;
+}
+
+.dialog::backdrop {
   background-color: #00000030;
   backdrop-filter: blur(4px);
 }
@@ -33,7 +38,8 @@ dialog::backdrop {
   cursor: pointer;
 }
 
-.btn-basic {
-  background-color: #4ba3e3;
-  color: #fff;
+.btn-neu {
+  background-color: #fff;
+  border: 1px solid #183153;
+  box-shadow: 0px 4px 0px 0px #183153;
 }
