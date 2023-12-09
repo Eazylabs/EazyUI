@@ -14,10 +14,10 @@ export function Editor({ element, initStyle, initContent, initHover }) {
   const [width, setWidth] = useState(65);
   const [editorView, setEditorView] = useState<string>(Object.keys(initStyle)[0]);
   const [isHover, setIsHover] = useState<boolean>(false);
+  const [mode, setMode] = useState<string>('editor');
   const [style, setStyle] = useState<IStyle>(initStyle);
   const [styleStorage, setStyleStorage] = useState<IStyle>({ ...style, ...initHover });
   const [content, setContent] = useState(initContent);
-  const [toggleView, setToggleView] = useState(1);
   const [propertyShow, setPropertyShow] = useState({
     border: initStyle[editorView].hasOwnProperty('borderWidth'),
     shadow: initStyle[editorView].hasOwnProperty('boxShadow'),
@@ -120,11 +120,10 @@ export function Editor({ element, initStyle, initContent, initHover }) {
     }
   };
 
-  console.log(styleStorage, 'styleStorage');
+  const rename = renameAllKeys(isHover ? style : styleStorage, ':hover');
+  const normalStyle = isHover ? styleStorage : style;
 
-  const rename = renameAllKeys(styleStorage, ':hover');
-
-  const cssString = jsonToCss({ ...style, ...rename });
+  const cssString = jsonToCss({ ...normalStyle, ...rename });
 
   const Element = element;
 
@@ -137,12 +136,12 @@ export function Editor({ element, initStyle, initContent, initHover }) {
           <div className='header-dot'></div>
         </div>
         <div className='header-toggle'>
-          <div className={`header-tab ${toggleView == 1 ? 'left' : 'right'}`}></div>
-          <div onClick={() => setToggleView(1)}>
+          <div className={`header-tab ${mode == 'editor' ? 'left' : 'right'}`}></div>
+          <div onClick={() => setMode('editor')}>
             <LiaEditSolid />
             <span>Editor</span>
           </div>
-          <div onClick={() => setToggleView(2)}>
+          <div onClick={() => setMode('preview')}>
             <AiOutlineEye />
             <span>Preview</span>
           </div>
@@ -156,6 +155,7 @@ export function Editor({ element, initStyle, initContent, initHover }) {
           setStyle={setStyle}
           styleStorage={styleStorage}
           setStyleStorage={setStyleStorage}
+          mode={mode}
         />
       </div>
       <div className='custom'>

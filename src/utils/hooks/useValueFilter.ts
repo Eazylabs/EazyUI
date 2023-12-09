@@ -20,7 +20,6 @@ export const useValueFilter = (property, value) => {
   if (property.includes('shadow')) {
     const [shadowX, shadowY, shadowBlur, shadowSpread, shadowColor] = value.split(' ');
 
-    console.log(shadowX, shadowY, shadowBlur, shadowSpread, shadowColor);
     if (property == 'shadowX') return shadowX.toString().replace(/[^0-9.]+/, '');
     if (property == 'shadowY') return shadowY.toString().replace(/[^0-9.]+/, '');
     if (property == 'shadowBlur') return shadowBlur.toString().replace(/[^0-9.]+/, '');

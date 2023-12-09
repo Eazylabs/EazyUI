@@ -30,6 +30,7 @@
   align-items: center;
   gap: 16px;
   position: relative;
+  cursor: pointer;
 }
 
 .header-dot {
