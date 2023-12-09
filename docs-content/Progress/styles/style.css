@@ -103,7 +103,7 @@ div[data-value='100'].progress-success::before {
   border-radius: 99px;
 }
 
-div[data-value='0'].progress-warn::before {
+div[data-value='0'].progress-warning::before {
   content: '';
   position: absolute;
   width: 0;
@@ -112,7 +112,7 @@ div[data-value='0'].progress-warn::before {
   border-radius: 99px;
 }
 
-div[data-value='25'].progress-warn::before {
+div[data-value='25'].progress-warning::before {
   content: '';
   position: absolute;
   width: 25%;
@@ -121,7 +121,7 @@ div[data-value='25'].progress-warn::before {
   border-radius: 99px;
 }
 
-div[data-value='50'].progress-warn::before {
+div[data-value='50'].progress-warning::before {
   content: '';
   position: absolute;
   width: 50%;
@@ -130,7 +130,7 @@ div[data-value='50'].progress-warn::before {
   border-radius: 99px;
 }
 
-div[data-value='75'].progress-warn::before {
+div[data-value='75'].progress-warning::before {
   content: '';
   position: absolute;
   width: 75%;
@@ -139,7 +139,7 @@ div[data-value='75'].progress-warn::before {
   border-radius: 99px;
 }
 
-div[data-value='100'].progress-warn::before {
+div[data-value='100'].progress-warning::before {
   content: '';
   position: absolute;
   width: 100%;
