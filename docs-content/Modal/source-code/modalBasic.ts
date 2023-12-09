@@ -1,7 +1,7 @@
 import ModalBasic from '../blocks/ModalBasic';
 
 export const MODALBASIC = {
-  html: `<button onClick={openDialog} className="btn btn-basic">
+  html: `<button class="btn btn-basic">
   Click Me
 </button>; 
 <div ref={dialog}>
@@ -12,9 +12,9 @@ export const MODALBASIC = {
     sweat and tears, and I'm never giving up, I'm just getting started. I'm up
     to something. Fan luv.
   </p>
-  <div className="modal-btn">
-    <button className="btn">Cancel</button>
-    <button className="btn btn-basic">
+  <div class="modal-btn">
+    <button class="btn">Cancel</button>
+    <button class="btn btn-basic">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="23"
@@ -56,6 +56,25 @@ dialog::backdrop {
   gap: 16px;
 }
   `,
-  javascript: ``,
+  javascript: `const dialog = document.querySelector('dialog');
+  
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', () => {
+  dialog.showModal();
+});
+
+dialog.addEventListener('click', (e) => {
+  const dialogDimensions = dialog.getBoundingClientRect();
+  if (
+    e.clientX < dialogDimensions.left ||
+    e.clientX > dialogDimensions.right ||
+    e.clientY < dialogDimensions.top ||
+    e.clientY > dialogDimensions.bottom
+  ) {
+    dialog.close();
+  }
+});
+`,
   element: ModalBasic,
 };
