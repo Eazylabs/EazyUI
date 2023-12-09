@@ -5,9 +5,9 @@ import { FiCopy } from 'react-icons/fi';
 import CodeHighlight from '../Editor/CodeHighlight';
 import './CodePreview.css';
 
-export default function CodePreview({ element, html, css, javascript }) {
-  const Element = element;
-  const choices = { preview: <Element />, html, css, javascript };
+export default function CodePreview({ children }) {
+  const Element = children[0].element;
+  const { element = null, ...choices } = { preview: <Element />, ...children[0] };
 
   const [tab, setTab] = useState('preview');
 
