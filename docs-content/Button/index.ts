@@ -18,7 +18,7 @@ const BUTTON: Array<IEditor> = [
     },
     initHover: {
       '.button-container': {
-        backgroundColor: 'red',
+        backgroundColor: '#687EFF',
       },
     },
     initContent: {
@@ -42,7 +42,7 @@ const BUTTON: Array<IEditor> = [
     },
     initHover: {
       '.button-outline': {
-        backgroundColor: 'red',
+        backgroundColor: '#687EFF',
       },
     },
     initContent: {

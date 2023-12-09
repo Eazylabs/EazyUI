@@ -119,9 +119,10 @@ export function Editor({ element, initStyle, initContent, initHover }) {
     }
   };
 
-  const rename = renameAllKeys(styleStorage, ':hover');
+  const rename = renameAllKeys(isHover ? style : styleStorage, ':hover');
+  const normalStyle = isHover ? styleStorage : style;
 
-  const cssString = jsonToCss({ ...style, ...rename });
+  const cssString = jsonToCss({ ...normalStyle, ...rename });
 
   const Element = element;
 
