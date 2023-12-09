@@ -60,3 +60,9 @@
   color: #183153;
   border-left: 10px solid #ffd43b;
 }
+
+.alert-desc-danger {
+  background-color: #ffb9b9;
+  color: #e03131;
+  border-left: 10px solid #e03131;
+}

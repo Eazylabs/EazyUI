@@ -1,4 +1,5 @@
 import { ALERTDANGER } from './source-code/alertDanger';
+import { ALERTDANGERDESC } from './source-code/alertDangerDesc';
 import { ALERTINFO } from './source-code/alertInfo';
 import { ALERTINFODESC } from './source-code/alertInfoDesc';
 import { ALERTNEU } from './source-code/alertNeu';
@@ -16,4 +17,5 @@ export const COMPONENTS = [
   ALERTINFODESC,
   ALERTSUCCESSDESC,
   ALERTWARNINGDESC,
+  ALERTDANGERDESC,
 ];
