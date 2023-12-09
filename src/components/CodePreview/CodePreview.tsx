@@ -6,8 +6,8 @@ import CodeHighlight from '../Editor/CodeHighlight';
 import './CodePreview.css';
 
 export default function CodePreview({ children }) {
-  const Element = children[0].element;
-  const { element = null, ...choices } = { preview: <Element />, ...children[0] };
+  const Element = children.element;
+  const { element = null, ...choices } = { preview: <Element />, ...children };
 
   const [tab, setTab] = useState('preview');
   const [copy, setCopy] = useState(false);
