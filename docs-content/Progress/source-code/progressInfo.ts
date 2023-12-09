@@ -1,4 +1,4 @@
-import ProgresssInfo from '../blocks/ProgressInfo';
+import ProgressInfo from '../blocks/ProgressInfo';
 
 export const PROGRESSINFO = {
   html: `<div className='progress progress-info' data-value='0'></div>
@@ -61,5 +61,5 @@ div[data-value='100'].progress-info::before {
   background-color: #3b82b5;
   border-radius: 99px;
 }`,
-  element: ProgresssInfo,
+  element: ProgressInfo,
 };
