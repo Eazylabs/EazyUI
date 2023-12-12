@@ -20,8 +20,10 @@ export const TWEETNEU = {
 }
 
 .tweet-neu {
-  color: #fff;
-  background-color: #183153;
+  color: #183153;
+  background-color: #fff;
+  border: 1px solid #183153;
+  box-shadow: 4px 4px 0px 0px #183153;
 }
 
 .tweet-profile {
