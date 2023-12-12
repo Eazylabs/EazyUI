@@ -46,3 +46,9 @@
   background-color: #fff;
   border: 1px solid #ffd43b;
 }
+
+.badge-danger-outline {
+  color: #e03131;
+  background-color: #fff;
+  border: 1px solid #e03131;
+}

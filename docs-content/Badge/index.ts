@@ -1,4 +1,5 @@
 import { BADGEDANGER } from './source-code/badgeDanger';
+import { BADGEDANGEROUTLINE } from './source-code/badgeDangerOutline';
 import { BADGEINFO } from './source-code/badgeInfo';
 import { BADGEINFOOUTLINE } from './source-code/badgeInfoOutline';
 import { BADGENEU } from './source-code/badgeNeu';
@@ -16,4 +17,5 @@ export const COMPONENTS = [
   BADGEINFOOUTLINE,
   BADGESUCCESSOUTLINE,
   BADGEWARNOUTLINE,
+  BADGEDANGEROUTLINE,
 ];
