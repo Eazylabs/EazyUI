@@ -94,11 +94,11 @@
   border-radius: 50%;
 }
 
-.badge-box::after {
+.badge-dot::after {
   content: '';
   position: absolute;
-  top: -8px;
-  right: -8px;
+  top: 0;
+  right: 0;
   width: 16px;
   height: 16px;
   background-color: #e03131;
