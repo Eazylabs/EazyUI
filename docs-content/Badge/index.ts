@@ -1,3 +1,4 @@
+import { BADGEBOXDOT } from './source-code/badgeBoxDot';
 import { BADGEDANGER } from './source-code/badgeDanger';
 import { BADGEDANGEROUTLINE } from './source-code/badgeDangerOutline';
 import { BADGEICON } from './source-code/badgeIcon';
@@ -20,4 +21,5 @@ export const COMPONENTS = [
   BADGEWARNOUTLINE,
   BADGEDANGEROUTLINE,
   BADGEICON,
+  BADGEBOXDOT,
 ];
