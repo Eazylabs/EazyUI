@@ -8,8 +8,9 @@ export const BADGEINFOOUTLINE = {
 }
 
 .badge-info-outline {
-  color: #fff;
-  background-color: #4ba3e3;
+  color: #4ba3e3;
+  background-color: #fff;
+  border: 1px solid #4ba3e3;
 }`,
   element: BadgeInfoOutline,
 };

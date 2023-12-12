@@ -8,8 +8,9 @@ export const BADGESUCCESSOUTLINE = {
 }
 
 .badge-success-outline {
-  color: #fff;
-  background-color: #4ba3e3;
+  color: #14b789;
+  background-color: #fff;
+  border: 1px solid #14b789;
 }`,
   element: BadgeSuccessOutline,
 };
