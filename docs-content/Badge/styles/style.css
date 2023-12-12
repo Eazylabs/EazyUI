@@ -18,6 +18,11 @@
   background-color: #ffd43b;
 }
 
+.badge-danger {
+  color: #fff;
+  background-color: #e03131;
+}
+
 .badge-outline {
   color: #4ba3e3;
   background-color: #fff;
