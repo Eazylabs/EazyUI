@@ -52,3 +52,11 @@
   background-color: #fff;
   border: 1px solid #e03131;
 }
+
+.badge-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  background-color: #4ba3e3;
+}
