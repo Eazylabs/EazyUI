@@ -10,8 +10,6 @@ export const BADGEBASIC = {
 .badge-basic {
   color: #fff;
   background-color: #4ba3e3;
-}
-
-  `,
+}`,
   element: BadgeBasic,
 };
