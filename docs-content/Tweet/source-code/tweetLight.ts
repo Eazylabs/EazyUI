@@ -20,6 +20,7 @@ export const TWEETLIGHT = {
 }
 
 .tweet-light {
+  background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
