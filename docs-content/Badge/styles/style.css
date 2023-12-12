@@ -7,3 +7,9 @@
   color: #fff;
   background-color: #4ba3e3;
 }
+
+.badge-outline {
+  color: #4ba3e3;
+  background-color: #fff;
+  border: 1px solid #4ba3e3;
+}
