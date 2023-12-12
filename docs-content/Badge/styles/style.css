@@ -40,3 +40,9 @@
   background-color: #fff;
   border: 1px solid #14b789;
 }
+
+.badge-warn-outline {
+  color: #ffd43b;
+  background-color: #fff;
+  border: 1px solid #ffd43b;
+}
