@@ -46,3 +46,38 @@
   background-color: #d3fff2;
   border-radius: 99px;
 }
+
+.stat-neu {
+  border: 1px solid #183153;
+  box-shadow: 4px 4px 0px 0px #183153;
+}
+
+.stat-neu .stat-item:not(:last-child) {
+  border-right: 1px solid #183153;
+}
+
+.stat-neu .stat-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #183153;
+}
+
+.stat-neu .stat-item:nth-child(1) .stat-counter {
+  color: #4ba3e3;
+  text-shadow: 2px 2px 0 #3b82b5;
+}
+
+.stat-neu .stat-item:nth-child(2) .stat-counter {
+  color: #ffd43b;
+  text-shadow: 2px 2px 0 #dab121;
+}
+
+.stat-neu .stat-item:nth-child(3) .stat-counter {
+  color: #e03131;
+  text-shadow: 2px 2px 0 #900000;
+}
+
+.stat-neu .stat-badge {
+  border: 1px solid #14b789;
+}
