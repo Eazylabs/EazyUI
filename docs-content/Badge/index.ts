@@ -1,4 +1,3 @@
-import { BADGEBASIC } from './source-code/badgeBasic';
-import { BADGEOUTLINE } from './source-code/badgeOutline';
+import { BADGEINFO } from './source-code/badgeInfo';
 
-export const COMPONENTS = [BADGEBASIC, BADGEOUTLINE];
+export const COMPONENTS = [BADGEINFO];
