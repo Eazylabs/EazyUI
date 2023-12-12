@@ -12,3 +12,15 @@
   background-color: #4ba3e3;
   color: #fff;
 }
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #4ba3e3;
+  color: #4ba3e3;
+}
+
+.btn-icon {
+  border-radius: 5px;
+  background-color: #4ba3e3;
+  color: #fff;
+}

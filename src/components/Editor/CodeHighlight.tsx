@@ -5,8 +5,14 @@ import './CodeHighlight.css';
 
 export default function CodeHighlight({ code, lang }) {
   return (
-    <div style={{ fontFamily: 'monospace' }} className='editor' id='editor'>
-      <SyntaxHighlighter showLineNumbers language={lang} style={oneDark}>
+    <div>
+      <SyntaxHighlighter
+        showLineNumbers
+        language={lang}
+        style={oneDark}
+        lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}
+        wrapLines
+      >
         {code}
       </SyntaxHighlighter>
     </div>

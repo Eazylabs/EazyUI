@@ -1,7 +1,7 @@
-import { ButtonBasic } from '../blocks/ButtonBasic';
+import ButtonBasic from '../blocks/ButtonBasic';
 
 export const BUTTONBASIC = {
-  html: '<button class="btn btn-primary">Primary</button>',
+  html: '<button class="btn btn-basic">Button Basic</button>',
   css: `.btn {
   display: flex;
   align-items: center;
@@ -17,6 +17,5 @@ export const BUTTONBASIC = {
   color: #fff;
 }
 `,
-  javascript: '',
   element: ButtonBasic,
 };
