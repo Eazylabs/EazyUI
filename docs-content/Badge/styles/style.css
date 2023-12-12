@@ -34,3 +34,9 @@
   background-color: #fff;
   border: 1px solid #4ba3e3;
 }
+
+.badge-success-outline {
+  color: #14b789;
+  background-color: #fff;
+  border: 1px solid #14b789;
+}
