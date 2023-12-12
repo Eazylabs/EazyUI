@@ -23,6 +23,12 @@
   background-color: #e03131;
 }
 
+.badge-neu {
+  color: #183153;
+  border: 1px solid #183153;
+  box-shadow: 2px 2px #183153;
+}
+
 .badge-outline {
   color: #4ba3e3;
   background-color: #fff;
