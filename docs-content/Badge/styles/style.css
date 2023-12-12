@@ -8,6 +8,11 @@
   background-color: #4ba3e3;
 }
 
+.badge-success {
+  color: #fff;
+  background-color: #14b789;
+}
+
 .badge-outline {
   color: #4ba3e3;
   background-color: #fff;
