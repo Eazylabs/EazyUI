@@ -1,0 +1,24 @@
+.avatar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  background-color: gray;
+}
+
+.avatar-circle {
+  border-radius: 50%;
+}
+
+.avatar-rounded {
+  border-radius: 8px;
+}
+
+.avatar-outline {
+  border: 2px solid #4ba3e3;
+}
