@@ -8,8 +8,8 @@ export const BADGEWARN = {
 }
 
 .badge-warn {
-  color: #fff;
-  background-color: #14b789;
+  color: #183153;
+  background-color: #ffd43b;
 }`,
   element: BadgeWarn,
 };
