@@ -16,6 +16,10 @@ export const BUTTONBASIC = {
   background-color: #4ba3e3;
   color: #fff;
 }
+
+.btn-basic:hover {
+  background-color: #348fd0;
+}
 `,
   element: ButtonBasic,
 };

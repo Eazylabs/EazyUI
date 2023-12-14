@@ -22,7 +22,11 @@ export const BUTTONICON = {
     border-radius: 5px;
     background-color: #4ba3e3;
     color: #fff;
-  }
+}
+
+.btn-icon:hover {
+  background-color: #348fd0;
+}
 `,
   element: ButtonIcon,
 };
