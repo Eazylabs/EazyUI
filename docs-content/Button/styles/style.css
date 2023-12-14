@@ -13,15 +13,64 @@
   color: #fff;
 }
 
+.btn-basic:hover {
+  background-color: #348fd0;
+}
+
 .btn-outline {
   background-color: transparent;
   border: 1px solid #4ba3e3;
   color: #4ba3e3;
 }
 
+.btn-outline:hover {
+  background-color: #4ba3e3;
+  color: #fff;
+}
+
 .btn-icon {
-  padding: 12px;
   border-radius: 5px;
   background-color: #4ba3e3;
   color: #fff;
+}
+
+.btn-icon:hover {
+  background-color: #348fd0;
+}
+
+.btn-neu-basic {
+  background-color: #4ba3e3;
+  border: 2px solid black;
+  color: #fff;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0);
+}
+
+.btn-neu-basic:hover {
+  background-color: #348fd0;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0);
+}
+
+.btn-neu-outline {
+  background-color: transparent;
+  border: 2px solid black;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0);
+}
+
+.btn-neu-outline:hover {
+  background-color: #4ba3e3;
+  color: #fff;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0);
+}
+
+.btn-neu-icon {
+  border-radius: 5px;
+  background-color: #4ba3e3;
+  border: 2px solid black;
+  color: #fff;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0);
+}
+
+.btn-neu-icon:hover {
+  background-color: #348fd0;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0);
 }

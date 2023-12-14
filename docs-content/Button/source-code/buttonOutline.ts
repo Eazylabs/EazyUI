@@ -10,13 +10,18 @@ export const BUTTONOUTLINE = {
     padding: 12px 44px;
     border-radius: 8px;
     cursor: pointer;
-  }
+}
   
-  .btn-outline {
+.btn-outline {
     background-color: transparent;
     border: 1px solid #4ba3e3;
     color: #4ba3e3;
-  }
+}
+
+.btn-outline:hover {
+    background-color: #4ba3e3;
+    color: #fff;
+}
   `,
   element: ButtonOutline,
 };
