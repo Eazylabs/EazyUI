@@ -13,6 +13,14 @@
   color: #fff;
 }
 
+.btn-success {
+  background-color: #14b789;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #0f9e7a;
+}
 .btn-basic:hover {
   background-color: #348fd0;
 }
