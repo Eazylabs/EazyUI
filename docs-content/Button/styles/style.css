@@ -50,6 +50,17 @@
   color: #4ba3e3;
 }
 
+.btn-success-outline {
+  background-color: transparent;
+  border: 1px solid #14b789;
+  color: #14b789;
+}
+
+.btn-success-outline:hover {
+  background-color: #14b789;
+  color: #fff;
+}
+
 .btn-outline:hover {
   background-color: #4ba3e3;
   color: #fff;
