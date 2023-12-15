@@ -31,6 +31,15 @@
   background-color: #FFc82c;
 }
 
+.btn-danger {
+  background-color: #e03131;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c92b2b;
+}
+
 .btn-basic:hover {
   background-color: #348fd0;
 }
