@@ -61,6 +61,17 @@
   color: #fff;
 }
 
+.btn-warning-outline {
+  background-color: transparent;
+  border: 1px solid #FFd43b;
+  color: #FFd43b;
+}
+
+.btn-warning-outline:hover {
+  background-color: #FFd43b;
+  color: #fff;
+}
+
 .btn-outline:hover {
   background-color: #4ba3e3;
   color: #fff;
