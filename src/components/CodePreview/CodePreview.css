@@ -95,7 +95,6 @@
 }
 
 .preview {
-  height: 300px;
   background-color: #282c34;
   overflow-y: auto;
 }
@@ -105,4 +104,16 @@
   align-items: center;
   justify-content: center;
   background-color: #fff;
+}
+
+.h-sm {
+  height: 250px;
+}
+
+.h-md {
+  height: 300px;
+}
+
+.h-lg {
+  height: 400px;
 }

@@ -1,11 +1,33 @@
 import { Listbox } from '@headlessui/react';
+import { cn } from '@site/src/utils/service';
 import React, { useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
-import { FiCopy, FiCheck } from 'react-icons/fi';
+import { FiCheck, FiCopy } from 'react-icons/fi';
 import CodeHighlight from '../Editor/CodeHighlight';
 import './CodePreview.css';
 
-export default function CodePreview({ children }) {
+interface IHeight {
+  sm: string;
+  md: string;
+  lg: string;
+}
+
+type ICodePreview = {
+  children: any;
+  height?: keyof IHeight;
+};
+
+const containerHeight = ({ height }: ICodePreview) => {
+  const heightClass = {
+    sm: 'h-sm',
+    md: 'h-md',
+    lg: 'h-lg',
+  };
+
+  return cn(heightClass[height || 'md']);
+};
+
+export default function CodePreview({ children, height }: ICodePreview) {
   const Element = children.element;
   const { element = null, ...choices } = { preview: <Element />, ...children };
 
@@ -52,7 +74,7 @@ export default function CodePreview({ children }) {
           {copy ? <FiCheck /> : <FiCopy />}
         </div>
       </div>
-      <div className={`${tab == 'preview' && 'active'} preview`}>
+      <div className={`${tab == 'preview' && 'active'} ${containerHeight({ height } as ICodePreview)} preview`}>
         {tab == 'preview' ? choices[tab] : <CodeHighlight code={choices[tab]} lang={tab} />}
       </div>
     </div>
