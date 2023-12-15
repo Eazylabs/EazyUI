@@ -1,6 +1,15 @@
-.card {
-  padding: 0;
-  box-shadow: none;
+import CardCenterNeu from '../blocks/CardCenterNeu';
+
+export const CARDCENTERNEU = {
+  html: `<div class="card card-neu">
+  <div class="card-img">Image</div>
+  <div class="card-body">
+    <h3>Shoes!</h3>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <button class="btn btn-neu">Add</button>
+  </div>
+</div>`,
+  css: `.card {
   border-radius: 8px;
   max-width: 286px;
   border: 1px solid #e6e6e6;
@@ -17,10 +26,6 @@
   height: 135px;
   background-color: #f3f4f6;
   object-fit: cover;
-  /*  */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .card-body {
@@ -44,11 +49,6 @@
   cursor: pointer;
 }
 
-.btn-primary {
-  background-color: #4ba3e3;
-  color: #fff;
-}
-
 .btn-neu {
   border: 1px solid #183153;
   box-shadow: 0px 4px 0px 0px #183153;
@@ -56,23 +56,6 @@
 
 .btn-neu:hover {
   box-shadow: 4px 4px 0px 0px #183153;
-}
-
-.card-badge {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  align-self: end;
-}
-
-.badges {
-  padding: 6px 16px;
-  border-radius: 99px;
-
-  font-size: 10px;
-}
-
-.badge-info {
-  color: #fff;
-  background-color: #4ba3e3;
-}
+}`,
+  element: CardCenterNeu,
+};
