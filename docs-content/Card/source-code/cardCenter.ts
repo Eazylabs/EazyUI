@@ -1,6 +1,15 @@
-.card {
-  padding: 0;
-  box-shadow: none;
+import CardCenter from '../blocks/CardCenter';
+
+export const CARDCENTER = {
+  html: `<div class="card">
+  <div class="card-img">Image</div>
+  <div class="card-body">
+    <h3>Shoes!</h3>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <button class="btn btn-primary">Add</button>
+  </div>
+</div>`,
+  css: `.card {
   border-radius: 8px;
   max-width: 286px;
   border: 1px solid #e6e6e6;
@@ -11,10 +20,6 @@
   height: 135px;
   background-color: #f3f4f6;
   object-fit: cover;
-  /*  */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .card-body {
@@ -41,23 +46,6 @@
 .btn-primary {
   background-color: #4ba3e3;
   color: #fff;
-}
-
-.card-badge {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  align-self: end;
-}
-
-.badges {
-  padding: 6px 16px;
-  border-radius: 99px;
-
-  font-size: 10px;
-}
-
-.badge-info {
-  color: #fff;
-  background-color: #4ba3e3;
-}
+}`,
+  element: CardCenter,
+};
