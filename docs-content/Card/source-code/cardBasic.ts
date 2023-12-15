@@ -42,8 +42,6 @@ export const CARDBASIC = {
 .btn-primary {
   background-color: #4ba3e3;
   color: #fff;
-}
-
-  `,
+}`,
   element: CardBasic,
 };

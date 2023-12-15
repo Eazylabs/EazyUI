@@ -38,7 +38,6 @@ export const CARDBADGE = {
 .badges {
   padding: 6px 16px;
   border-radius: 99px;
-
   font-size: 10px;
 }
 
