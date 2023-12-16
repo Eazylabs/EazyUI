@@ -1,4 +1,8 @@
-.btn {
+import TooltipBlack from "../blocks/TooltipBlack";
+
+export const TOOLTIPBLACK = {
+  html: `<button class='btn btn-neu tooltip black' data-tooltip='Hello!'>Hover Me</button>`,
+  css: `.btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,15 +53,6 @@
     width: auto;
 }
 
-.white:hover:before{
-    border-top-color: #ffffff;
-}
-
-.white:hover:after{
-    background: #ffffff;
-    color: #183153;
-}
-
 .black:hover:before{
     border-top-color: #183153;
 }
@@ -65,4 +60,6 @@
 .black:hover:after{
     background: #183153;
     color: #ffffff;
-}
+}`,
+    element: TooltipBlack,
+};
