@@ -1,4 +1,8 @@
-.btn {
+import TooltipSuccess from "../blocks/TooltipSuccess";
+
+export const TOOLTIPSUCCESS = {
+  html: `<button class='btn btn-neu tooltip success' data-tooltip='Hello!'>Hover Me</button>`,
+  css: `.btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,47 +53,13 @@
     width: auto;
 }
 
-.white:hover:before{
-    border-top-color: #ffffff;
-}
-
-.white:hover:after{
-    background: #ffffff;
-    color: #183153;
-}
-
-.black:hover:before{
-    border-top-color: #183153;
-}
-
-.black:hover:after{
-    background: #183153;
-    color: #ffffff;
-}
-
-.info:hover::before{
-    border-top-color: #3B82B5;
-}
-
-.info:hover:after{
-    background: #3B82B5;
-    color: #ffffff;
-}
-
-.success:hover:before{
+.success:hover::before{
     border-top-color: #14B789;
 }
 
 .success:hover:after{
     background: #14B789;
     color: #ffffff;
-}
-
-.warning:hover:before{
-    border-top-color: #FFD43B;
-}
-
-.warning:hover:after{
-    background: #FFD43B;
-    color: #ffffff;
-}
+}`,
+    element: TooltipSuccess,
+};
