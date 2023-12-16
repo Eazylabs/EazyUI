@@ -21,6 +21,25 @@
 .btn-success:hover {
   background-color: #0f9e7a;
 }
+
+.btn-warning {
+  background-color: #FFd43b;
+  color: #fff;
+}
+
+.btn-warning:hover {
+  background-color: #FFc82c;
+}
+
+.btn-danger {
+  background-color: #e03131;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c92b2b;
+}
+
 .btn-basic:hover {
   background-color: #348fd0;
 }
@@ -29,6 +48,39 @@
   background-color: transparent;
   border: 1px solid #4ba3e3;
   color: #4ba3e3;
+}
+
+.btn-success-outline {
+  background-color: transparent;
+  border: 1px solid #14b789;
+  color: #14b789;
+}
+
+.btn-success-outline:hover {
+  background-color: #14b789;
+  color: #fff;
+}
+
+.btn-warning-outline {
+  background-color: transparent;
+  border: 1px solid #FFd43b;
+  color: #FFd43b;
+}
+
+.btn-warning-outline:hover {
+  background-color: #FFd43b;
+  color: #fff;
+}
+
+.btn-danger-outline {
+  background-color: transparent;
+  border: 1px solid #e03131;
+  color: #e03131;
+}
+
+.btn-danger-outline:hover {
+  background-color: #e03131;
+  color: #fff;
 }
 
 .btn-outline:hover {
