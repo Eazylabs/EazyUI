@@ -12,9 +12,18 @@ interface IHeight {
   lg: string;
 }
 
+interface IOrigin {
+  topLeft: string;
+  topRight: string;
+  bottomLeft: string;
+  bottomRight: string;
+  center: string;
+}
+
 type ICodePreview = {
   children: any;
   height?: keyof IHeight;
+  origin?: keyof IOrigin;
 };
 
 const containerHeight = ({ height }: ICodePreview) => {
@@ -27,7 +36,19 @@ const containerHeight = ({ height }: ICodePreview) => {
   return cn(heightClass[height || 'md']);
 };
 
-export default function CodePreview({ children, height }: ICodePreview) {
+const originPosition = ({ origin }: ICodePreview) => {
+  const originClass = {
+    topLeft: 'origin-top-left',
+    topRight: 'origin-top-right',
+    bottomLeft: 'origin-bottom-left',
+    bottomRight: 'origin-bottom-right',
+    center: 'origin-center',
+  };
+
+  return cn(originClass[origin || 'center']);
+};
+
+export default function CodePreview({ children, height, origin }: ICodePreview) {
   const Element = children.element;
   const { element = null, ...choices } = { preview: <Element />, ...children };
 
@@ -74,7 +95,11 @@ export default function CodePreview({ children, height }: ICodePreview) {
           {copy ? <FiCheck /> : <FiCopy />}
         </div>
       </div>
-      <div className={`${tab == 'preview' && 'active'} ${containerHeight({ height } as ICodePreview)} preview`}>
+      <div
+        className={`${tab == 'preview' && originPosition({ origin } as ICodePreview)} ${containerHeight({
+          height,
+        } as ICodePreview)} preview`}
+      >
         {tab == 'preview' ? choices[tab] : <CodeHighlight code={choices[tab]} lang={tab} />}
       </div>
     </div>
