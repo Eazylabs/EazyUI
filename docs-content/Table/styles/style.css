@@ -1,0 +1,45 @@
+.table {
+  border-radius: 8px;
+  border-collapse: collapse;
+  border: 1px solid #e0e0e0;
+}
+
+th,
+td,
+tr {
+  text-align: left;
+  border: none !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+  padding: 16px;
+}
+
+.table-col {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  background-color: gray;
+}
+
+.avatar-rounded {
+  border-radius: 8px;
+}
+
+.badges {
+  padding: 6px 16px;
+  border-radius: 99px;
+}
+
+.badge-success {
+  color: #fff;
+  background-color: #14b789;
+}
+
+tr:nth-child(even) {
+  background-color: #d6eeee !important;
+}
