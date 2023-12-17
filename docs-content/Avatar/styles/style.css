@@ -9,6 +9,7 @@
   height: 80px;
   object-fit: cover;
   background-color: gray;
+  overflow: hidden;
 }
 
 .avatar-circle {
