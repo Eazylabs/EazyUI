@@ -1,6 +1,6 @@
 import React from 'react';
 import { PrismAsyncLight as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import './CodeHighlight.css';
 
 export default function CodeHighlight({ code, lang }) {
@@ -9,7 +9,7 @@ export default function CodeHighlight({ code, lang }) {
       <SyntaxHighlighter
         showLineNumbers
         language={lang}
-        style={oneDark}
+        style={oneLight}
         lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}
         wrapLines
       >

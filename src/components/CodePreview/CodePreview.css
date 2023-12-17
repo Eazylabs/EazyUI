@@ -95,7 +95,7 @@
 }
 
 .preview {
-  background-color: #282c34;
+  background-color: #fafafa;
   overflow-y: auto;
 }
 
@@ -103,7 +103,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
 .h-sm {
