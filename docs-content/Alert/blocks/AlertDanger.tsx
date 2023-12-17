@@ -3,7 +3,7 @@ import '../styles/style.css';
 
 export default function AlertDanger() {
   return (
-    <div className='alert alert-danger'>
+    <div className='alert danger'>
       <svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'>
         <g clip-path='url(#clip0_194_331)'>
           <path
