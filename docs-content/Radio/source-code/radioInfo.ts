@@ -1,9 +1,9 @@
 import RadioInfo from '../blocks/RadioInfo';
 
 export const RADIOINFO = {
-  html: `<div className='form-control'>
-  <input type='radio' name='info' className='radio radio-info' checked />
-  <input type='radio' name='info' className='radio radio-info' />
+  html: `<div class='form-control'>
+  <input type='radio' name='info' class='radio radio-info' checked />
+  <input type='radio' name='info' class='radio radio-info' />
 </div>`,
   css: `.form-control {
   display: flex;
