@@ -18,6 +18,7 @@ export const BREADCRUMBARROW = {
     border-radius: 0;
     font-size: 20px;
     padding: 8px 15px;
+    border-radius: 10px;
 }
   
   .breadcrumb li {
