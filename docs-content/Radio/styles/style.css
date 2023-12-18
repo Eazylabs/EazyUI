@@ -16,6 +16,7 @@
   transform: translateY(-0.075em);
   display: grid;
   place-content: center;
+  cursor: pointer;
 }
 
 .radio-info {
