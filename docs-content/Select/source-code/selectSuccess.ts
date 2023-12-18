@@ -21,7 +21,7 @@ export const SELECTSUCCESS = {
 }
 
 .select-success:focus {
-  outline: 2px solid #14b789 !important;
+  outline: 2px solid #14b789;
   outline-offset: 2px;
 }`,
   element: SelectSuccess,
