@@ -79,3 +79,7 @@
 .radio-info:checked + label {
   color: #4ba3e3;
 }
+
+label {
+  margin-right: 16px;
+}
