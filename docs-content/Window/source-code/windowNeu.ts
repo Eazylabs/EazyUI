@@ -1,8 +1,8 @@
-import Window from "../blocks/Window";
+import WindowNeu from "../blocks/WIndowNeu";
 
-export const WINDOW = {
-  html: `<div class="mockup window">
-        <div class="window-mockup window"></div>
+export const WINDOWNEU = {
+  html: `<div class="mockup neu">
+        <div class="window-mockup neu"></div>
     </div>`,
   css: `.mockup {
     width: 440px;
@@ -29,19 +29,23 @@ export const WINDOW = {
     border-radius: 50%;
 }
 
-.mockup.window {
+.mockup.neu{
     background-color: #fff;
-    box-shadow: 0px 4px 8px #f1f5f9;
+    border: 1px solid #183153;
+    box-shadow: 4px 4px 0px 0px #183153;
 }
-.window-mockup.window{
+
+.window-mockup.neu{
+    border: none;
+    box-shadow: 0px 0px 0px 0px #F1F5F9;
     background-color: #ECEFF1;
 }
 
-.window::before {
-    background-color: #C4C4C4;
-    box-shadow: 0 0 0 2px #C4C4C4, 
-    1.5em 0 0 2px #C4C4C4, 
-    3em 0 0 2px #C4C4C4;
+.neu::before{
+    background-color: #183153;
+    box-shadow: 0 0 0 2px #183153, 
+    1.5em 0 0 2px #183153, 
+    3em 0 0 2px #183153;
 }`,
-  element: Window,
+  element: WindowNeu,
 };
