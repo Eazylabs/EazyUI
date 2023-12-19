@@ -112,3 +112,33 @@ body {
   background-color: #fbfbfb;
   border-right: 1px solid #e3e4e8;
 }
+
+.info {
+  background-color: #4ba3e3;
+  color: #fff;
+}
+
+.success {
+  background-color: #14b789;
+  color: #fff;
+}
+
+.warning {
+  background-color: #ffd43b;
+  color: #183153;
+}
+
+.danger {
+  background-color: #e03131;
+  color: #fff;
+}
+
+.neu {
+  border: 1px solid #183153;
+  box-shadow: 0px 4px 0px 0px #183153;
+}
+
+.primary {
+  background-color: #fff;
+  border: 1px solid #0ea5e9;
+}

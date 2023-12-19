@@ -7,25 +7,6 @@
   width: 80%;
 }
 
-.alert-info {
-  background-color: #4ba3e3;
-  color: #fff;
-}
-
-.alert-success {
-  background-color: #14b789;
-  color: #fff;
-}
-
-.alert-warning {
-  background-color: #ffd43b;
-}
-
-.alert-danger {
-  background-color: #e03131;
-  color: #fff;
-}
-
 .alert-neu {
   border: 1px solid #183153;
   box-shadow: 0px 4px 0px 0px #183153;

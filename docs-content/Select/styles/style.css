@@ -1,0 +1,60 @@
+.select {
+  width: min(100%, 300px);
+  padding: 16px;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.select-bordered {
+  border: 1px solid #e5e7eb;
+}
+
+.select:focus {
+  outline: 2px solid #e5e7eb !important;
+  outline-offset: 2px;
+}
+
+.select-info {
+  border: 1px solid #4ba3e3;
+}
+
+.select-info:focus {
+  outline: 2px solid #4ba3e3 !important;
+  outline-offset: 2px;
+}
+
+.select-success {
+  border: 1px solid #14b789;
+}
+
+.select-success:focus {
+  outline: 2px solid #14b789 !important;
+  outline-offset: 2px;
+}
+
+.select-warning {
+  border: 1px solid #ffd43b;
+}
+
+.select-warning:focus {
+  outline: 2px solid #ffd43b !important;
+  outline-offset: 2px;
+}
+
+.select-danger {
+  border: 1px solid #e03131;
+}
+
+.select-danger:focus {
+  outline: 2px solid #e03131 !important;
+  outline-offset: 2px;
+}
+
+.select-neu {
+  border: 1px solid #183153;
+}
+
+.select-neu:focus {
+  outline: 2px solid #183153 !important;
+  outline-offset: 2px;
+}

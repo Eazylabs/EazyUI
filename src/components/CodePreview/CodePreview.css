@@ -95,15 +95,35 @@
 }
 
 .preview {
-  background-color: #282c34;
+  display: flex;
+  background-color: #fafafa;
   overflow-y: auto;
+  padding: 0 16px;
 }
 
-.preview.active {
-  display: flex;
+.preview.origin-center {
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+}
+
+.preview.origin-top-left {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.preview.origin-top-right {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.preview.origin-bottom-left {
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.preview.origin-bottom-right {
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .h-sm {

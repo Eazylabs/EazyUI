@@ -1,0 +1,66 @@
+.speeddial {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+}
+
+.speeddial-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+  background-color: #4ba3e3;
+  border-radius: 100%;
+  width: fit-content;
+  padding: 10px;
+}
+
+.speeddial-menu button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+  border: 0.5px solid #c3c6d1;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.speeddial-menu button:hover {
+  transform: scale(1.1);
+}
+
+.speeddial-menu {
+  display: none;
+}
+
+.speeddial:hover .speeddial-menu {
+  display: block;
+}
+
+.speeddial:hover .speeddial-btn svg {
+  transform: rotate(45deg);
+}
+
+.context {
+  background-color: white;
+  border: 0.5px solid #c3c6d1;
+  width: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.context ul {
+  list-style: none;
+  padding: 0px 0px;
+  margin: 0;
+}
+
+.context li {
+  border-bottom: 0.5px solid #c3c6d1;
+  padding: 4px 6px;
+
+  /* with icon */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

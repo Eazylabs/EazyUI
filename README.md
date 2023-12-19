@@ -1,41 +1,5 @@
-# Website
+![Alt text](./static/img/landing.png/?raw=true 'Landing Page')
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+# EAZY UI
 
-### Installation
-
-```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+EAZY UI is a modern UI component library designed to simplify the process of building user interfaces with Native CSS. With over 200+ open-source Native CSS components, EAZY UI provides developers with a wide range of pre-built elements to choose from, making it easy to create visually appealing and functional products.
