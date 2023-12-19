@@ -1,7 +1,7 @@
 import FileInfo from '../blocks/FileInfo';
 
 export const FILEINFO = {
-  html: `<input type="file" class="file-input file-neu" />`,
+  html: `<input type="file" class="file-input file-info" />`,
   css: `.file-input {
   display: block;
   width: clamp(400px, 75%, 600px);
