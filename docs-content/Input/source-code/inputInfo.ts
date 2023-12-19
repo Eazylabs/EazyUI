@@ -21,6 +21,7 @@ export const INPUTINFO = {
   padding: 16px 32px;
   border-radius: 8px;
   border: 1px solid #ccc;
+  width: min(100%, 500px);
 }
 
 .text-input::placeholder {
