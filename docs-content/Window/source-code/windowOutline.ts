@@ -22,7 +22,7 @@ export const WINDOWOUTLINE = {
     display: block;
     position: relative;
     content: '';
-    top: 1em;
+    top: 1.1em;
     left: 1em;
     width: 0.5em;
     height: 0.5em;

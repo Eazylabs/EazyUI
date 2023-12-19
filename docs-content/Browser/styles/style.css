@@ -5,14 +5,14 @@
     border-radius: 8px;
 }
 
-.window-mockup {
+.browser-mockup {
     width: 439px;
     height: 44px;
     flex-shrink: 0;
     border-radius: 8px 8px 0px 0px;
 }
 
-.window-mockup::before {
+.browser-mockup::before {
     display: block;
     position: relative;
     content: '';
@@ -23,26 +23,49 @@
     border-radius: 50%;
 }
 
-.mockup.window {
+.mockup.browser {
     background-color: #fff;
     box-shadow: 0px 4px 8px #f1f5f9;
 }
-.window-mockup.window{
+
+.browser-mockup.browser {
     background-color: #ECEFF1;
 }
 
-.window::before {
+.browser::before {
     background-color: #C4C4C4;
     box-shadow: 0 0 0 2px #C4C4C4, 1.5em 0 0 2px #C4C4C4, 3em 0 0 2px #C4C4C4;
 }
 
-.mockup.outline {
+.search-box {
+    width: 190px;
+    height: 28px;
+    margin: auto;
+    flex-shrink: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+[name="searching"] {
+    padding: 0px 0px 0px 0.5em;
+    width: 80%;
+    border: none;
+    font-size:14px;
+    font-family: Cera Pro;
+    outline: none;
+    background-color: transparent;
+}
+
+.mockup.outline .search-box {
     border: 1px solid #6B7280;
-    background-color: #fff; 
+    background-color: #fff;
     box-shadow: 0px 4px 8px 0px #F1F5F9;
 }
 
-.window-mockup.outline {
+.browser-mockup.outline {
     border-bottom: 1px solid var(--text-secondary, #6B7280);
     background-color: transparent;
 }
@@ -52,19 +75,19 @@
     box-shadow: 0 0 0 2px #C4C4C4, 1.5em 0 0 2px #C4C4C4, 3em 0 0 2px #C4C4C4;
 }
 
-.mockup.neu{
+.mockup.neu {
     background-color: #fff;
     border: 1px solid #183153;
     box-shadow: 4px 4px 0px 0px #183153;
 }
 
-.window-mockup.neu{
+.browser-mockup.neu {
     border: none;
     box-shadow: 0px 0px 0px 0px #F1F5F9;
     background-color: #ECEFF1;
 }
 
-.neu::before{
+.neu::before {
     background-color: #183153;
     box-shadow: 0 0 0 2px #183153, 1.5em 0 0 2px #183153, 3em 0 0 2px #183153;
 }
