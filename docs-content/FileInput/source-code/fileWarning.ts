@@ -24,6 +24,7 @@ export const FILEWARNING = {
 }
 
 .file-warning::file-selector-button {
+  color: #183153;
   background-color: #ffd43b;
 }`,
   element: FileWarning,
