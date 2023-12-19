@@ -10,7 +10,7 @@ export const LOADERROLLER = {
   <div></div>
   <div></div>
   <div></div>
-</div>;`,
+</div>`,
   css: `.loader {
   display: inline-block;
   position: relative;
