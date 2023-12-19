@@ -1,4 +1,10 @@
-.mockup {
+import WindowOutline from "../blocks/WindowOutline";
+
+export const WINDOWOUTLINE = {
+  html: `<div class="mockup outline">
+        <div class="window-mockup outline"></div>
+    </div>`,
+  css: `.mockup {
     width: 440px;
     height: 240px;
     flex-shrink: 0;
@@ -23,19 +29,6 @@
     border-radius: 50%;
 }
 
-.mockup.window {
-    background-color: #fff;
-    box-shadow: 0px 4px 8px #f1f5f9;
-}
-.window-mockup.window{
-    background-color: #ECEFF1;
-}
-
-.window::before {
-    background-color: #C4C4C4;
-    box-shadow: 0 0 0 2px #C4C4C4, 1.5em 0 0 2px #C4C4C4, 3em 0 0 2px #C4C4C4;
-}
-
 .mockup.outline {
     border: 1px solid #6B7280;
     background-color: #fff; 
@@ -49,5 +42,9 @@
 
 .outline::before {
     background-color: #C4C4C4;
-    box-shadow: 0 0 0 2px #C4C4C4, 1.5em 0 0 2px #C4C4C4, 3em 0 0 2px #C4C4C4;
-}
+    box-shadow: 0 0 0 2px #C4C4C4, 
+    1.5em 0 0 2px #C4C4C4, 
+    3em 0 0 2px #C4C4C4;
+}`,
+  element: WindowOutline,
+};
