@@ -1,7 +1,7 @@
 import LoaderRoller from '../blocks/LoaderRoller';
 
 export const LOADERROLLER = {
-  html: `<div className="loader loader-roller">
+  html: `<div class="loader loader-roller">
   <div></div>
   <div></div>
   <div></div>
