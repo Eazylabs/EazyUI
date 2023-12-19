@@ -17,7 +17,7 @@ export const ACCORDIONDANGER = {
   </div>
 </details>`,
   css: `.accordion {
-  width: 500px;
+  width: clamp(200px, 100%, 500px);
   margin: 0 auto;
   background-color: #bbe1ff;
   border-left: 10px solid #4ba3e3;
@@ -46,7 +46,7 @@ export const ACCORDIONDANGER = {
 }
 
 .accordion-desc {
-  max-width: 100%;
+  max-width: 400px;
   line-height: 1.5;
 }
 
