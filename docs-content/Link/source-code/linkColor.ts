@@ -1,4 +1,12 @@
-.link {
+import LinkColor from '../blocks/LinkColor';
+
+export const LINKCOLOR = {
+  html: `<a href='#' class='link link-info'>I'm simple link</a>
+<a href='#' class='link link-success'>I'm simple link</a>
+<a href='#' class='link link-warning'>I'm simple link</a>
+<a href='#' class='link link-danger'>I'm simple link</a>
+  `,
+  css: `.link {
   color: #aaa;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -44,27 +52,6 @@
 
 .link-danger:hover {
   color: #b21f1f;
-}
-
-.link-icon {
-  text-decoration: none;
-  position: relative;
-}
-
-.link-icon::after {
-  content: '\2192';
-  margin-left: 4px;
-  position: absolute;
-  top: -2px;
-  transition: 150ms ease-in-out;
-}
-
-.link-icon:hover::after {
-  transform: translateX(10px);
-}
-
-.link-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
+}`,
+  element: LinkColor,
+};
