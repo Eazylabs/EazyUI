@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-top: 0 !important;
 }
 
 .menu-item:hover {
@@ -23,7 +24,7 @@
 /* menu horizontal */
 
 .menu-horizontal {
-  width: fit-content;
+  width: auto;
   display: flex;
   justify-content: center;
 }
