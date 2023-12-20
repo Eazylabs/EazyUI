@@ -3,7 +3,7 @@ import '../styles/style.css';
 
 export default function MenuIconLabel() {
   return (
-    <ul className='menu'>
+    <ul className='menus'>
       <li className='menu-item'>
         <svg
           xmlns='http://www.w3.org/2000/svg'

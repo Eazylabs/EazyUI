@@ -3,7 +3,7 @@ import '../styles/style.css';
 
 export default function MenuIconHorizontal() {
   return (
-    <ul className='menu menu-icon menu-horizontal'>
+    <ul className='menus menu-icon menu-horizontal'>
       <li className='menu-item'>
         <svg
           xmlns='http://www.w3.org/2000/svg'

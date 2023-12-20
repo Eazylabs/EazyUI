@@ -3,7 +3,7 @@ import '../styles/style.css';
 
 export default function MenuIcon() {
   return (
-    <ul className='menu menu-icon'>
+    <ul className='menus menu-icon'>
       <li className='menu-item'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
