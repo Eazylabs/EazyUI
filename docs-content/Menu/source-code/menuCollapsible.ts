@@ -1,6 +1,31 @@
-/* menu */
+import MenuCollapsible from '../blocks/MenuCollapsible';
 
-.menus {
+export const MENUCOLLAPSIBLE = {
+  html: `<ul class="menu">
+  <li class="menu-item">Item 1</li>
+  <details class="submenu-parent">
+    <summary class="menu-item menu-title">
+      Item 2<div class="chevron-icon"></div>
+    </summary>
+    <ul class="submenu-children">
+      <li class="menu-item">Sub item 1</li>
+      <li class="menu-item">Sub item 2</li>
+      <li class="menu-item">Sub item 3</li>
+      <details class="submenu-parent">
+        <summary class="menu-item menu-title">
+          Sub item 4<div class="chevron-icon"></div>
+        </summary>
+        <ul class="submenu-children">
+          <li class="menu-item">Sub item 1</li>
+          <li class="menu-item">Sub item 2</li>
+          <li class="menu-item">Sub item 3</li>
+        </ul>
+      </details>
+    </ul>
+  </details>
+  <li class="menu-item">Item 3</li>
+</ul>`,
+  css: `.menu {
   padding: 8px;
   border-radius: 8px;
   background-color: #fff;
@@ -20,25 +45,6 @@
 
 .menu-item:hover {
   background-color: #f5f5f5;
-}
-
-/* menu horizontal */
-
-.menu-horizontal {
-  width: fit-content;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* menu icon */
-.menus svg {
-  width: 24px;
-  aspect-ratio: 1/1;
-}
-
-.menu-icon {
-  width: fit-content;
 }
 
 .chevron-icon {
@@ -71,4 +77,6 @@
   border-left: 1px solid #aaa;
   margin-left: 16px;
   padding-left: 16px;
-}
+}`,
+  element: MenuCollapsible,
+};
