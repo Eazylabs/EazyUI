@@ -1,4 +1,15 @@
-.mockup-code {
+import CodeNeu from '../blocks/CodeNeu';
+
+export const CODENEU = {
+  html: `<div class="mockup-code code-neu">
+  <div class="three-dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <pre><code>~ npm run dev</code></pre>
+</div>`,
+  css: `.mockup-code {
   background-color: #183153;
   border-radius: 8px;
   color: #f1f5f9;
@@ -20,28 +31,12 @@
 }
 
 pre {
-  border-radius: 0;
   padding: 8px 16px;
-  background-color: #183153;
-}
-
-.text-info {
-  color: #4ba3e3;
-}
-
-.text-success {
-  color: #14b789;
-}
-
-.text-warning {
-  color: #ffd43b;
-}
-
-.text-danger {
-  color: #e03131;
 }
 
 .code-neu {
   border: 1px solid #000;
   box-shadow: 4px 4px 0 #000;
-}
+}`,
+  element: CodeNeu,
+};
