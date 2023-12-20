@@ -1,6 +1,6 @@
 /* menu */
 
-.menu {
+.menus {
   padding: 8px;
   border-radius: 8px;
   background-color: #fff;
@@ -28,6 +28,7 @@
   width: fit-content;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* menu icon */
