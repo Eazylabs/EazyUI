@@ -1,6 +1,12 @@
-/* menu */
+import MenuHorizontal from '../blocks/MenuHorizontal';
 
-.menu {
+export const MENUHORIZONTAL = {
+  html: `<ul class="menu menu-horizontal">
+  <li class="menu-item">Item 1</li>
+  <li class="menu-item">Item 2</li>
+  <li class="menu-item">Item 3</li>
+</ul>`,
+  css: `.menu {
   padding: 8px;
   border-radius: 8px;
   background-color: #fff;
@@ -20,20 +26,10 @@
   background-color: #f5f5f5;
 }
 
-/* menu horizontal */
-
 .menu-horizontal {
   width: fit-content;
   display: flex;
   justify-content: center;
-}
-
-/* menu icon */
-svg {
-  width: 24px;
-  aspect-ratio: 1/1;
-}
-
-.menu-icon {
-  width: fit-content;
-}
+}`,
+  element: MenuHorizontal,
+};
