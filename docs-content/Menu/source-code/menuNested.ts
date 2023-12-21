@@ -1,6 +1,19 @@
-/* menu */
+import MenuNested from '../blocks/MenuNested';
 
-.menus {
+export const MENUNESTED = {
+  html: `<ul class="menu">
+  <li class="menu-item">Item 1</li>
+  <li class="menu-item menu-title">
+    Item 2 <div class="chevron-icon"></div>
+    <ul class="menus nested-menu">
+      <li class="menu-item">Sub item 1</li>
+      <li class="menu-item">Sub item 2</li>
+      <li class="menu-item">Sub item 3</li>
+    </ul>
+  </li>
+  <li class="menu-item">Item 3</li>
+</ul>`,
+  css: `.menu {
   padding: 8px;
   border-radius: 8px;
   background-color: #fff;
@@ -23,25 +36,6 @@
   background-color: #f5f5f5;
 }
 
-/* menu horizontal */
-
-.menu-horizontal {
-  width: fit-content;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* menu icon */
-.menus svg {
-  width: 24px;
-  aspect-ratio: 1/1;
-}
-
-.menu-icon {
-  width: fit-content;
-}
-
 .chevron-icon {
   height: 24px;
   width: 24px;
@@ -51,10 +45,6 @@
   transition: transform 150ms ease-in;
 }
 
-.submenu-parent[open] > summary > .chevron-icon {
-  transform: rotate(90deg);
-}
-
 .menu-title {
   display: flex;
   align-items: center;
@@ -62,16 +52,6 @@
   padding: 8px 0 8px 12px;
   cursor: pointer;
   list-style: none;
-}
-
-.menu-title::-webkit-details-marker {
-  display: none;
-}
-
-.submenu-children {
-  border-left: 1px solid #aaa;
-  margin-left: 16px;
-  padding-left: 16px;
 }
 
 .nested-menu {
@@ -88,4 +68,6 @@
 
 .menu-item:hover > .nested-menu {
   display: block;
-}
+}`,
+  element: MenuNested,
+};

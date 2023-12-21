@@ -4,5 +4,14 @@ import { MENUHORIZONTAL } from './source-code/menuHorizontal';
 import { MENUICON } from './source-code/menuIcon';
 import { MENUICONHORIZONTAL } from './source-code/menuIconHorizontal';
 import { MENUICONLABEL } from './source-code/menuIconLabel';
+import { MENUNESTED } from './source-code/menuNested';
 
-export const COMPONENTS = [MENUBASIC, MENUHORIZONTAL, MENUICON, MENUICONHORIZONTAL, MENUICONLABEL, MENUCOLLAPSIBLE];
+export const COMPONENTS = [
+  MENUBASIC,
+  MENUHORIZONTAL,
+  MENUICON,
+  MENUICONHORIZONTAL,
+  MENUICONLABEL,
+  MENUCOLLAPSIBLE,
+  MENUNESTED,
+];
