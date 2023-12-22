@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/style.css";
 
-export default function () {
+export default function TabButton() {
   const [active, setActive] = useState(0);
 
   const handleClick = (index) => {
