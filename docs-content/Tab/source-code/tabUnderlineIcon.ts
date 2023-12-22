@@ -1,7 +1,7 @@
-import TabButtonIcon from "../blocks/TabButtonIcon";
+import TabUnderlineIcon from "../blocks/TabUnderlineIcon";
 
-export const TABBUTTONICON = {
-  html:`<div class="tab tab-button">
+export const TABUNDERLINEICON = {
+  html:`<div class="tab tab-underline">
   <button class="tab-btn active">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -72,13 +72,14 @@ export const TABBUTTONICON = {
   cursor: pointer;
 }
 
-.tab-button .tab-btn.active {
-  background-color: #183153;
-  color: #fff;
+.tab-underline .tab-btn {
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
 }
 
-.tab-button .tab-btn.active svg path {
-  fill: #fff;
+.tab-underline .tab-btn.active {
+  color: #183153;
+  border-color: #183153;
 }`,
   javascript:`const tabBtn = document.querySelectorAll(".tab-btn");
 
@@ -90,5 +91,5 @@ tabBtn.forEach((btn) => {
     btn.classList.add("active");
   });
 });`,
-  element: TabButtonIcon
+  element: TabUnderlineIcon
 }
