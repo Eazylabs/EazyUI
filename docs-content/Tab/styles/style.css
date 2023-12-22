@@ -1,0 +1,41 @@
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none !important;
+}
+
+.tab-button {
+  color: #183153;
+  background-color: #fff !important;
+}
+
+.tab-btn {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tab-button .tab-btn.active {
+  background-color: #183153;
+  color: #fff;
+}
+
+.tab-button .tab-btn.active svg path {
+  fill: #fff;
+}
+
+.tab-underline .tab-btn {
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-underline .tab-btn.active {
+  color: #183153;
+  border-color: #183153;
+}
