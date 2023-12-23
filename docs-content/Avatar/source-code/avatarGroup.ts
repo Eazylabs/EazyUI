@@ -10,7 +10,7 @@ export const AVATARGROUP = {
     </div>`,
   css: `.avatar-group{
   display: flex;
-  margin: auto;
+  align-items: center;
 }
 
 .avatar-group img{

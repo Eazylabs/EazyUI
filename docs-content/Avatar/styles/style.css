@@ -44,7 +44,7 @@
 
 .avatar-group{
   display: flex;
-  margin: auto;
+  align-items: center;
 }
 
 .avatar-group img{
