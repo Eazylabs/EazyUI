@@ -23,3 +23,52 @@
 .avatar-outline {
   border: 2px solid #4ba3e3;
 }
+
+.text{
+  color: var(--black, #183153);
+  font-family: Cera Pro;
+  font-style: normal;
+}
+
+.text h2{
+  margin: auto;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.text p{
+  margin:auto;
+  font-weight: 400;
+  font-size: 8px;
+}
+
+.avatar-group{
+  display: flex;
+  margin: auto;
+}
+
+.avatar-group img{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.avatar-group img:nth-child(1) {
+  transform: translateX(10px);
+}
+
+.avatar-group img:nth-child(2) {
+  transform: translateX(0px);
+}
+
+.avatar-group img:nth-child(3) {
+  transform: translateX(-10px);
+}
+
+.avatar-group img:nth-child(4) {
+  transform: translateX(-20px);
+}
+
+.avatar-group img:nth-child(5) {
+  transform: translateX(-30px);
+}
