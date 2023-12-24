@@ -1,0 +1,26 @@
+.countdown {
+  display: flex;
+  gap: 1rem;
+}
+
+.countdown span {
+  font-size: 48px;
+}
+
+.countdown div h1 {
+  margin-bottom: 0 !important;
+}
+
+.countdown div {
+  display: flex;
+  width: 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+}
+
+.countdown div p {
+  font-size: 1rem;
+  font-weight: 700;
+}
