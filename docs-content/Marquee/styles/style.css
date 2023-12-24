@@ -1,5 +1,46 @@
 .marquee {
   width: 100%;
-  height: 40px;
-  background-color: antiquewhite;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.text-running {
+  height: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.logo-running {
+  height: 100px;
+}
+
+.marquee-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  align-items: center;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-track .content {
+  margin-right: 10px;
+  min-width: fit-content;
+  height: fit-content;
+  font-size: 20px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
