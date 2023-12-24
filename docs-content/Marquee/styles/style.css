@@ -1,5 +1,5 @@
 .marquee {
-  width: 100%;
+  width: 70%;
   overflow: hidden;
   position: relative;
   border-radius: 10px;
@@ -18,11 +18,11 @@
 
 .marquee-track {
   display: flex;
-  width: 100%;
+  width: 200%;
   height: 100%;
   position: absolute;
   align-items: center;
-  animation: marquee 10s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 
 .marquee-track:hover {
@@ -37,10 +37,10 @@
 }
 
 @keyframes marquee {
-  0% {
-    transform: translateX(0);
+  from {
+    transform: translateX(100%);
   }
-  100% {
-    transform: translateX(-50%);
+  to {
+    transform: translateX(-100%);
   }
 }
