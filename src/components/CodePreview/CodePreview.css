@@ -137,3 +137,8 @@
 .h-lg {
   height: 400px;
 }
+
+.h-auto {
+  height: auto;
+  padding: 32px;
+}
