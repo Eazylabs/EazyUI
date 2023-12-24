@@ -23,15 +23,15 @@ export default function CountdownBox() {
 
   return (
     <div className='countdown'>
-      <div className='primary'>
+      <div className='info'>
         <h1 id='hours'>{twoDigits(hours)}</h1>
         <p>Hours</p>
       </div>
-      <div className='primary'>
+      <div className='info'>
         <h1 id='minutes'>{twoDigits(minutes)}</h1>
         <p>Minutes</p>
       </div>
-      <div className='primary'>
+      <div className='info'>
         <h1 id='seconds'>{twoDigits(seconds)}</h1>
         <p>Seconds</p>
       </div>

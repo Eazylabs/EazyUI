@@ -1,3 +1,4 @@
+import Link from '@docusaurus/Link';
 import { SKELETON } from '@site/src/constant';
 import { ISkeleton } from '@site/src/utils/interfaces';
 import clsx from 'clsx';
@@ -19,14 +20,14 @@ function CardComponent({ title, category, img }: ISkeleton) {
   });
 
   return (
-    <div className={`card-component ${cardColor}`}>
+    <Link to={`${category}/${title}`} style={{color:'inherit'}} className={`card-component ${cardColor}`}>
       <div className={`card-component-image ${cardColor}`}>
         <img src={img} alt={title} />
       </div>
-      <div className='card-component-title'>
-        <h3>{title}</h3>
+      <div className=''>
+        <h3 className='card-component-title'>{title}</h3>
       </div>
-    </div>
+    </Link>
   );
 }
 
