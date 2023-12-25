@@ -1,0 +1,83 @@
+.drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 50dvw;
+  padding: 16px;
+  background: #fff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 52px;
+}
+
+.drawer.left {
+  left: -50dvw;
+}
+
+.drawer.right {
+  right: -50dvw;
+}
+
+.drawer.left.active {
+  left: 0;
+}
+
+.drawer.right.active {
+  right: 0;
+}
+
+.drawer.active .drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -2;
+}
+
+.drawer.left.active .drawer-backdrop {
+  left: 50dvw;
+}
+
+.drawer.right.active .drawer-backdrop {
+  right: 50dvw;
+}
+
+.drawer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 44px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-basic {
+  background-color: #4ba3e3;
+  color: #fff;
+}
+
+.btn-basic:hover {
+  background-color: #348fd0;
+}
+
+@media (min-width: 768px) {
+  .drawer {
+    width: 25dvw;
+  }
+
+  .drawer.left.active .drawer-backdrop {
+    left: 25dvw;
+  }
+
+  .drawer.right.active .drawer-backdrop {
+    right: 25dvw;
+  }
+}
