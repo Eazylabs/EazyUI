@@ -142,3 +142,7 @@ body {
   background-color: #fff;
   border: 1px solid #0ea5e9;
 }
+
+.prism-code {
+  background: transparent;
+}
