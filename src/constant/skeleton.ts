@@ -63,7 +63,7 @@ export const SKELETON: Array<ISkeleton> = [
     img: useBaseUrl('skeleton-collapse.svg'),
   },
   {
-    title: 'countdown',
+    title: 'clock',
     category: 'data-display',
     img: useBaseUrl('skeleton-countdown.svg'),
   },

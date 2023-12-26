@@ -1,15 +1,15 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import time from '../utils/time';
+import '../styles/style.css';
 
-export default function Countdown() {
-  const [timer, setTimer] = useState(3600);
+export default function ClockNeuBox() {
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [hours, setHours] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const { seconds, minutes, hours } = time(timer - 1);
+      const { seconds, minutes, hours } = time();
       setSeconds(seconds);
       setMinutes(minutes);
       setHours(hours);
@@ -22,10 +22,19 @@ export default function Countdown() {
   }, []);
 
   return (
-    <div className='countdown'>
-      <h2 id='hours'>{twoDigits(hours)} : </h2>
-      <h2 id='minutes'>{twoDigits(minutes)} : </h2>
-      <h2 id='seconds'>{twoDigits(seconds)}</h2>
+    <div className='clock'>
+      <div className='neu'>
+        <h1 id='hours'>{twoDigits(hours)}</h1>
+        <p>Hours</p>
+      </div>
+      <div className='neu'>
+        <h1 id='minutes'>{twoDigits(minutes)}</h1>
+        <p>Minutes</p>
+      </div>
+      <div className='neu'>
+        <h1 id='seconds'>{twoDigits(seconds)}</h1>
+        <p>Seconds</p>
+      </div>
     </div>
   );
 }

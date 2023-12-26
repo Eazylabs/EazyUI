@@ -1,15 +1,14 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import time from '../utils/time';
 
-export default function Countdown() {
-  const [timer, setTimer] = useState(3600);
+export default function Clock() {
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [hours, setHours] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const { seconds, minutes, hours } = time(timer - 1);
+      const { seconds, minutes, hours } = time();
       setSeconds(seconds);
       setMinutes(minutes);
       setHours(hours);
@@ -22,7 +21,7 @@ export default function Countdown() {
   }, []);
 
   return (
-    <div className='countdown'>
+    <div className='clock'>
       <h2 id='hours'>{twoDigits(hours)} : </h2>
       <h2 id='minutes'>{twoDigits(minutes)} : </h2>
       <h2 id='seconds'>{twoDigits(seconds)}</h2>
