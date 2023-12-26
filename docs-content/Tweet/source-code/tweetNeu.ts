@@ -1,15 +1,15 @@
 import TweetNeu from '../blocks/TweetNeu';
 
 export const TWEETNEU = {
-  html: `<div className="tweet tweet-neu">
-  <div className="tweet-profile">
-    <div className="tweet-image"></div>
-    <div className="tweet-username">
+  html: `<div class="tweet tweet-neu">
+  <div class="tweet-profile">
+    <div class="tweet-image"></div>
+    <div class="tweet-username">
       <div>Eazy Labs</div>
       <div>@eazylabs</div>
     </div>
   </div>
-  <div className="tweet-desc">
+  <div class="tweet-desc">
     It's like @Figma but you're actually building the site.
   </div>
 </div>`,
