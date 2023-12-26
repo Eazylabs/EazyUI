@@ -78,14 +78,8 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          { to: '/blog', label: 'Components', position: 'left' },
-          { to: '/blog', label: 'Resources', position: 'left' },
+          { to: '/docs/component', label: 'Components', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
-          {
-            href: 'https://github.com/Eazylabs/EazyUI',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {
@@ -95,8 +89,16 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Get started',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Components',
+                to: '/docs/component',
+              },
+              {
+                label: 'Blog',
+                to: '/blog',
               },
             ],
           },
