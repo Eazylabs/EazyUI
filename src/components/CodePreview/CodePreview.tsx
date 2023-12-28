@@ -1,7 +1,5 @@
-import { Listbox } from "@headlessui/react";
 import { cn } from "@site/src/utils/service";
 import React, { useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
 import { FiCheck, FiCopy } from "react-icons/fi";
 import CodeHighlight from "../Editor/CodeHighlight";
 import "./CodePreview.css";
@@ -78,27 +76,17 @@ export default function CodePreview(
           <div className="dot green"></div>
         </div>
         <div className="listbox-wrapper">
-          <Listbox value={tab} onChange={setTab}>
-            <Listbox.Button className="listbox-btn">{tab}</Listbox.Button>
-            <Listbox.Button className="listbox-btn-chevron">
-              <FaChevronDown />
-            </Listbox.Button>
-            <Listbox.Options className="listbox-options">
-              {Object.keys(choices).map((key) => {
-                if (key !== tab) {
-                  return (
-                    <Listbox.Option
-                      key={key}
-                      value={key}
-                      className="listbox-option"
-                    >
-                      {key}
-                    </Listbox.Option>
-                  );
-                }
-              })}
-            </Listbox.Options>
-          </Listbox>
+          <select
+            value={tab}
+            onChange={(e) => setTab(e.target.value)}
+            className="select"
+          >
+            {Object.keys(choices).map((key) => (
+              <option key={key} value={key}>
+                {key}
+              </option>
+            ))}
+          </select>
         </div>
         <div className="copy-btn" onClick={handleClipboard}>
           {copy ? <FiCheck /> : <FiCopy />}
