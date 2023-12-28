@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Prerequisite
+# Get Started
 
 How to setup your project with Eazy UI?
 
