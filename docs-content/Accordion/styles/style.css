@@ -1,5 +1,5 @@
 .accordion {
-  width: clamp(200px, 100%, 500px);
+  width: 300px;
   margin: 0 auto;
   background-color: #bbe1ff;
   border-left: 10px solid #4ba3e3;
@@ -70,4 +70,10 @@
   color: #183153;
   border: 1px solid #183153;
   box-shadow: 4px 4px 0 #183153;
+}
+
+@media (min-width: 768px) {
+  .accordion {
+    width: 400px;
+  }
 }

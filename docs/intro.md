@@ -2,46 +2,111 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Get Started
 
-Let's discover **Docusaurus in less than 5 minutes**.
+How to setup your project with Eazy UI?
 
-## Getting Started
+- First make structure folder like this
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
+```
+.
+├── index.html
+├── root.css
+└── style.css
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+- Then inside your html
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
+```
+<!doctype html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="root.css">
+  </head>
+  <body>
+    <button type="button" class="btn btn-basic info"></button>
+  </body>
+</html>
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+- Then copy this css and paste in root.css
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+```
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: initial;
+  border-radius: initial;
+  background: initial;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+  transition: all 150ms ease-in-out;
+}
+
+body {
+  background-color: #f4f5f7;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.info {
+  background-color: #4ba3e3;
+  color: #fff;
+}
+
+.success {
+  background-color: #14b789;
+  color: #fff;
+}
+
+.warning {
+  background-color: #ffd43b;
+  color: #183153;
+}
+
+.danger {
+  background-color: #e03131;
+  color: #fff;
+}
+
+.neu {
+  border: 1px solid #183153;
+  box-shadow: 0px 4px 0px 0px #183153;
+}
+
+.primary {
+  background-color: #fff;
+  border: 1px solid #0ea5e9;
+}
+```
+
+- Then go to our docs components and copy the code then paste in style.css
+
+```
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 44px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-basic {
+  background-color: #4ba3e3;
+  color: #fff;
+}
+
+.btn-basic:hover {
+  background-color: #348fd0;
+}
+```
+
+Congrats 🎉 you're Front End Developer now! Eazy right?
+[Go to our components!](/docs/component)

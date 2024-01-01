@@ -1,0 +1,26 @@
+.clock {
+  display: flex;
+  gap: 1rem;
+}
+
+.clock span {
+  font-size: 48px;
+}
+
+.clock div h1 {
+  margin-bottom: 0 !important;
+}
+
+.clock div {
+  display: flex;
+  width: 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+}
+
+.clock div p {
+  font-size: 1rem;
+  font-weight: 700;
+}

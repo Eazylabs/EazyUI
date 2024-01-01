@@ -1,0 +1,87 @@
+.step-h {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #183153;
+}
+
+.step-v {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+  color: #183153;
+}
+
+.step-item {
+  position: relative;
+}
+
+.step-item::before {
+  content: attr(data-step);
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: #ccc;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  z-index: 1;
+}
+
+.step-h .step-item::before {
+  top: -52px; left: 50%; transform: translateX(-50%);
+}
+
+.step-v .step-item::before {
+  top: -8px;
+  right: 60px;
+}
+
+.step-item.active::before {
+  color:#fff;
+  background: #183153;
+}
+
+.step-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+}
+
+.step-h .step-item:not(:last-child)::after {
+  top: -36px;
+  left: 80%;
+  width: 52px;
+  border-bottom: 2px solid #ccc;
+}
+
+.step-v .step-item:not(:last-child)::after {
+  top: 24px;
+  left: -28px;
+  height: 72px;
+  border-left: 2px solid #ccc;
+}
+
+.step-v .step-item:first-child::after {
+  left: -30px;
+}
+
+.step-h .step-item.active::after {
+  border-bottom: 2px solid #183153;
+}
+
+.step-v .step-item.active::after {
+  border-left: 2px solid #183153;
+}
+
+@media (min-width: 768px) {
+  .step-h,
+  .step-v {
+    gap: 72px;
+  }
+
+
+  .step-h .step-item:not(:last-child)::after{
+    width: 90px;
+  }
+}

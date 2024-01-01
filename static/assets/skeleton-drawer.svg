@@ -2,10 +2,10 @@
 <g filter="url(#filter0_d_318_200)">
 <rect x="13" y="10" width="132" height="94" rx="8" fill="white"/>
 </g>
-<path d="M13 18C13 13.5817 16.5817 10 21 10H64V104H21C16.5817 104 13 100.418 13 96V18Z" fill="#E4DBFF"/>
+<path d="M13 18C13 13.5817 16.5817 10 21 10H64V104H21C16.5817 104 13 100.418 13 96V18Z" fill="#FFE0E0"/>
 <rect x="22" y="22" width="31" height="5" rx="2.5" fill="#9570FF"/>
-<rect x="22" y="22" width="31" height="5" rx="2.5" fill="#9570FF"/>
-<rect x="22" y="33" width="22" height="4" rx="2" fill="#9570FF"/>
+<rect x="22" y="22" width="31" height="5" rx="2.5" fill="#E03131"/>
+<rect x="22" y="33" width="22" height="4" rx="2" fill="#E03131"/>
 <defs>
 <filter id="filter0_d_318_200" x="0" y="0" width="160" height="122" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>

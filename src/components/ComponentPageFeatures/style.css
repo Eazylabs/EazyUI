@@ -16,6 +16,8 @@
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
+  color: var(--ifm-black-primary) !important;
+  text-decoration: none !important;
 }
 
 .card-component-image {
@@ -56,6 +58,7 @@
 }
 
 .card-component-title {
+  color: var(--ifm-black-primary) !important;
   margin-top: 16px;
   text-transform: capitalize;
 }
@@ -63,37 +66,37 @@
 .card-component.blue:hover {
   border: 2px solid var(--ifm-blue-dark);
   box-shadow: 0 4px var(--ifm-blue-dark);
-  color: var(--ifm-blue-dark);
+  color: var(--ifm-blue-dark) !important;
 }
 
 .card-component.green:hover {
   border: 2px solid var(--ifm-green-dark);
   box-shadow: 0 4px var(--ifm-green-dark);
-  color: var(--ifm-green-dark);
+  color: var(--ifm-green-dark) !important;
 }
 
 .card-component.yellow:hover {
   border: 2px solid var(--ifm-yellow-dark);
   box-shadow: 0 4px var(--ifm-yellow-dark);
-  color: var(--ifm-yellow-dark);
+  color: var(--ifm-yellow-dark) !important;
 }
 
 .card-component.purple:hover {
   border: 2px solid var(--ifm-purple-dark);
   box-shadow: 0 4px var(--ifm-purple-dark);
-  color: var(--ifm-purple-dark);
+  color: var(--ifm-purple-dark) !important;
 }
 
 .card-component.pink:hover {
   border: 2px solid var(--ifm-pink-dark);
   box-shadow: 0 4px var(--ifm-pink-dark);
-  color: var(--ifm-pink-dark);
+  color: var(--ifm-pink-dark) !important;
 }
 
 .card-component.red:hover {
   border: 2px solid var(--ifm-red-dark);
   box-shadow: 0 4px var(--ifm-red-dark);
-  color: var(--ifm-red-dark);
+  color: var(--ifm-red-dark) !important;
 }
 
 @media (min-width: 640px) {

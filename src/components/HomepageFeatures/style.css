@@ -17,12 +17,13 @@
   gap: 16px;
 }
 
-.card {
+.card-feature {
   background-color: #fff;
   padding: 16px;
+  border-radius: 8px;
 }
 
-.card svg {
+.card-feature svg {
   margin: 20px auto;
 }
 

@@ -18,7 +18,7 @@ export const SKELETON: Array<ISkeleton> = [
     img: useBaseUrl('skeleton-modal.svg'),
   },
   {
-    title: 'speed dial',
+    title: 'speeddial',
     category: 'action',
     img: useBaseUrl('skeleton-speed-dial.svg'),
   },
@@ -63,7 +63,7 @@ export const SKELETON: Array<ISkeleton> = [
     img: useBaseUrl('skeleton-collapse.svg'),
   },
   {
-    title: 'countdown',
+    title: 'clock',
     category: 'data-display',
     img: useBaseUrl('skeleton-countdown.svg'),
   },
@@ -73,7 +73,7 @@ export const SKELETON: Array<ISkeleton> = [
     img: useBaseUrl('skeleton-loader.svg'),
   },
   {
-    title: 'progress bar',
+    title: 'progress',
     category: 'data-display',
     img: useBaseUrl('skeleton-progress-bar.svg'),
   },
@@ -134,13 +134,8 @@ export const SKELETON: Array<ISkeleton> = [
   },
   {
     title: 'drawer',
-    category: 'layout',
+    category: 'navigation',
     img: useBaseUrl('skeleton-drawer.svg'),
-  },
-  {
-    title: 'footer',
-    category: 'layout',
-    img: useBaseUrl('skeleton-footer.svg'),
   },
   {
     title: 'browser',
@@ -193,7 +188,7 @@ export const SKELETON: Array<ISkeleton> = [
     img: useBaseUrl('skeleton-tab.svg'),
   },
   {
-    title: 'step',
+    title: 'steps',
     category: 'navigation',
     img: useBaseUrl('skeleton-step.svg'),
   },
